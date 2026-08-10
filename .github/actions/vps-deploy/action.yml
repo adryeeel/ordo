@@ -38,7 +38,7 @@ runs:
               username: ${{ inputs.username }}
 
               script: |
-                  cd /home/${{ inputs.username }}/${{ inputs.project }}
+                  cd /home/${{ inputs.username }}/apps/${{ inputs.project }}
 
                   echo "${{ inputs.ghcr_token }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 

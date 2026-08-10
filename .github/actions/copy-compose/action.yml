@@ -34,4 +34,4 @@ runs:
               username: ${{ inputs.username }}
 
               source: ./compose.yml
-              target: /home/${{ inputs.username }}/${{ inputs.project }}
+              target: /home/${{ inputs.username }}/apps/${{ inputs.project }}
