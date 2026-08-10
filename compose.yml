@@ -1,7 +1,7 @@
 services:
-    cm-web:
+    ordo-web:
         image: ghcr.io/${GITHUB_REPOSITORY}/web:latest
-        container_name: cm-web
+        container_name: ordo-web
         restart: unless-stopped
 
         env_file:
