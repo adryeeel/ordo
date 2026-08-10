@@ -1,7 +1,7 @@
 {
-    "extends": "@checkmate/typescript/next",
+    "extends": "@ordo/typescript/next",
     "compilerOptions": {
-        "paths": { "@checkmate/ui/*": ["./src/*"] }
+        "paths": { "@ordo/ui/*": ["./src/*"] }
     },
     "include": ["**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]

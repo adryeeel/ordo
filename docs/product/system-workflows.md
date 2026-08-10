@@ -1,6 +1,6 @@
 # System Workflows
 
-This document describes the core behavioral patterns in Checkmate—how work flows through the system, how decisions are made, and how the system ensures accountability and traceability.
+This document describes the core behavioral patterns in Ordo—how work flows through the system, how decisions are made, and how the system ensures accountability and traceability.
 
 ## Work Submission & Execution Pattern
 

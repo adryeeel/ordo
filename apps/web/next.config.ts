@@ -4,7 +4,7 @@ const config: NextConfig = {
     typedRoutes: true,
     reactCompiler: true,
     output: 'standalone',
-    transpilePackages: ['@checkmate/ui'],
+    transpilePackages: ['@ordo/ui'],
     experimental: { useTypeScriptCli: true },
 };
 

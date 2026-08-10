@@ -1,4 +1,4 @@
-import { ThemeToggle } from '@checkmate/ui/internal/theme';
+import { ThemeToggle } from '@ordo/ui/internal/theme';
 
 import { Branding } from '@/components/branding';
 

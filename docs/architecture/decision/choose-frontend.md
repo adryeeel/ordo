@@ -40,4 +40,4 @@ Use **Next.js + React + TypeScript** as the frontend framework.
 ## Notes
 
 - This ADR can be updated later if the team discovers strong reasons to move to a different frontend framework.
-- The decision focuses on the first implementation of the Checkmate web app.
+- The decision focuses on the first implementation of the Ordo web app.

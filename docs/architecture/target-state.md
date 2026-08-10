@@ -2,7 +2,7 @@
 
 ## Overview
 
-The target architecture for Checkmate is a modular monorepo with three main layers:
+The target architecture for Ordo is a modular monorepo with three main layers:
 
 1. Presentation layer
     - The web application provides the user experience for interacting with work, approvals, and billing flows.

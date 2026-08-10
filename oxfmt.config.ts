@@ -1,4 +1,4 @@
 import { defineConfig } from 'oxfmt';
-import { baseConfig } from '@checkmate/oxfmt';
+import { baseConfig } from '@ordo/oxfmt';
 
 export default defineConfig(baseConfig);

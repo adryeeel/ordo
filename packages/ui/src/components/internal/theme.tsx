@@ -9,9 +9,9 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
     DropdownMenuContent,
-} from '@checkmate/ui/shadcn/dropdown';
+} from '@ordo/ui/shadcn/dropdown';
 
-import { Button } from '@checkmate/ui/shadcn/button';
+import { Button } from '@ordo/ui/shadcn/button';
 
 type Props = React.ComponentProps<typeof NextThemesProvider>;
 
