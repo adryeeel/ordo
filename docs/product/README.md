@@ -1,8 +1,8 @@
 # Product Documentation
 
-This folder contains the current product documentation for Checkmate. The documents describe the intended product behavior, scope, and user experience captured in the repository context.
+This folder contains the current product documentation for Ordo. The documents describe the intended product behavior, scope, and user experience captured in the repository context.
 
-These materials are intentionally written at a product level. They focus on what Checkmate should do for users and how the system should behave, while avoiding implementation detail unless it is clearly supported by the codebase.
+These materials are intentionally written at a product level. They focus on what Ordo should do for users and how the system should behave, while avoiding implementation detail unless it is clearly supported by the codebase.
 
 ## Quick Navigation
 
@@ -29,7 +29,7 @@ Each document is focused on a specific aspect of the product:
 
 | Document              | Purpose                                                                                   |
 | --------------------- | ----------------------------------------------------------------------------------------- |
-| `overview.md`         | Establish the problem space, proposed solution, and why Checkmate exists                  |
+| `overview.md`         | Establish the problem space, proposed solution, and why Ordo exists                       |
 | `core-concepts.md`    | Define fundamental concepts (teams, assignments, approval, automation) used by the system |
 | `roles-and-users.md`  | Describe user types and their capabilities                                                |
 | `system-workflows.md` | Describe core behavioral patterns: how work flows, approval works, automation triggers    |

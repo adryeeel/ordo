@@ -1,5 +1,5 @@
 {
-    "name": "@checkmate/oxlint",
+    "name": "@ordo/oxlint",
     "version": "0.1.0",
     "type": "module",
     "exports": {

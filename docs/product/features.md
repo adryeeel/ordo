@@ -1,6 +1,6 @@
 e# Core Features
 
-This document describes the core capability areas that appear to be part of Checkmate's intended product direction. Because the repository is still in an early stage, these areas should be treated as product guidance rather than finalized, fully implemented features.
+This document describes the core capability areas that appear to be part of Ordo's intended product direction. Because the repository is still in an early stage, these areas should be treated as product guidance rather than finalized, fully implemented features.
 
 ## 1. Work Initiation & Management
 

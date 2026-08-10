@@ -1,7 +1,7 @@
-import '@checkmate/ui/global.css';
+import '@ordo/ui/global.css';
 
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@checkmate/ui/internal/theme';
+import { ThemeProvider } from '@ordo/ui/internal/theme';
 
 interface Props {
     children: React.ReactNode;

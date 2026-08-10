@@ -1,10 +1,10 @@
 # Roles & Users
 
-This document defines the user types within Checkmate and their capabilities and responsibilities.
+This document defines the user types within Ordo and their capabilities and responsibilities.
 
 ## Target Users & Company Types
 
-Checkmate is designed for:
+Ordo is designed for:
 
 - **Service-based SMBs** — Boutique agencies and service firms
 - **Agencies** — Digital, creative, and consulting agencies

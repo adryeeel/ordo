@@ -1,6 +1,6 @@
 # Architecture Documentation
 
-This directory contains the architecture guidance for the Checkmate project.
+This directory contains the architecture guidance for the Ordo project.
 
 ## Start here
 

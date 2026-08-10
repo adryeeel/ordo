@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Checkmate is intended to be a platform that helps service-based businesses manage structured work execution, team assignment, and billing in a more consistent way.
+Ordo is intended to be a platform that helps service-based businesses manage structured work execution, team assignment, and billing in a more consistent way.
 
 This document describes the product direction and intended user experience rather than a fully implemented system. The current repository shows an early frontend foundation, so the product description should be treated as a working product vision that will evolve as the product matures.
 
@@ -21,7 +21,7 @@ This fragmentation creates several critical issues:
 
 ## The Solution
 
-Checkmate provides a **structured system** for managing client work from request to completion and billing.
+Ordo provides a **structured system** for managing client work from request to completion and billing.
 
 The system enforces a defined lifecycle for work execution, ensuring:
 
@@ -33,11 +33,11 @@ The system enforces a defined lifecycle for work execution, ensuring:
 
 ### Key Insight
 
-Checkmate uses a **structured workflow pattern** where work is explicitly assigned, executed with visibility, submitted for validation, and approved by management before billing. This creates a clear, auditable path from work initiation to completion and invoicing.
+Ordo uses a **structured workflow pattern** where work is explicitly assigned, executed with visibility, submitted for validation, and approved by management before billing. This creates a clear, auditable path from work initiation to completion and invoicing.
 
 ## Core Value Proposition
 
-| Challenge           | Checkmate Solution                                 |
+| Challenge           | Ordo Solution                                      |
 | ------------------- | -------------------------------------------------- |
 | Fragmented tools    | Single system of record for all work               |
 | Unclear ownership   | Explicit team assignments with permissions         |

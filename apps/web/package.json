@@ -18,10 +18,10 @@
         "react-dom": "^19.2.8"
     },
     "devDependencies": {
-        "@checkmate/oxfmt": "workspace:*",
-        "@checkmate/oxlint": "workspace:*",
-        "@checkmate/typescript": "workspace:*",
-        "@checkmate/ui": "workspace:*",
+        "@ordo/oxfmt": "workspace:*",
+        "@ordo/oxlint": "workspace:*",
+        "@ordo/typescript": "workspace:*",
+        "@ordo/ui": "workspace:*",
         "@tailwindcss/postcss": "^4.3.3",
         "@types/react": "^19.2.18",
         "@types/react-dom": "^19.2.4",

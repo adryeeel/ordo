@@ -1,5 +1,5 @@
 {
-    "name": "checkmate",
+    "name": "ordo",
     "version": "1.0.0",
     "license": "MIT",
     "author": "Adryel Rocha",
@@ -12,17 +12,17 @@
         "lint:fix": "oxlint --fix"
     },
     "devDependencies": {
-        "@checkmate/oxfmt": "workspace:*",
-        "@checkmate/oxlint": "workspace:*",
         "@commitlint/cli": "^21.2.1",
         "@commitlint/config-conventional": "^21.2.0",
         "@commitlint/types": "^21.2.0",
+        "@ordo/oxfmt": "workspace:*",
+        "@ordo/oxlint": "workspace:*",
         "husky": "^9.1.7",
         "lint-staged": "^17.3.0",
         "oxfmt": "^0.62.0",
         "oxlint": "^1.77.0",
         "oxlint-tsgolint": "^7.0.2001",
-        "turbo": "^2.10.8"
+        "turbo": "^2.10.9"
     },
-    "packageManager": "pnpm@11.18.0"
+    "packageManager": "pnpm@11.20.0"
 }

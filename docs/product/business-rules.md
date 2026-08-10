@@ -1,6 +1,6 @@
 # Business Rules
 
-This document captures the product-level rules that appear to shape Checkmate's intended behavior. These rules should be treated as working product guidance rather than finalized policy decisions.
+This document captures the product-level rules that appear to shape Ordo's intended behavior. These rules should be treated as working product guidance rather than finalized policy decisions.
 
 ## Core Rule Areas
 

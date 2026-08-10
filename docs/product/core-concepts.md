@@ -1,6 +1,6 @@
 # Core Concepts
 
-This document defines the fundamental concepts used throughout Checkmate.
+This document defines the fundamental concepts used throughout Ordo.
 
 ## Work
 
@@ -69,7 +69,7 @@ This document defines the fundamental concepts used throughout Checkmate.
 
 ## Roles
 
-Three core roles interact with Checkmate:
+Three core roles interact with Ordo:
 
 - **Admin** — System-wide access and configuration
 - **Manager** — Creates, assigns, approves, and oversees work requests

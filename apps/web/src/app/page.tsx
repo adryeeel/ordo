@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import { Header } from '@/components/header';
 
 export const metadata: Metadata = {
-    title: 'Checkmate | Automate Your Business',
-    description: 'AI Solutions to Boost Your Business.',
+    title: 'Ordo | Centralized Business Management & Automation',
+    description: 'Centralize your business operations from request to delivery.',
 };
 
 export default function Page() {

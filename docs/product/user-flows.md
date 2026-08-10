@@ -1,6 +1,6 @@
 # User Flows
 
-This document describes the step-by-step interactions users have with Checkmate across common scenarios.
+This document describes the step-by-step interactions users have with Ordo across common scenarios.
 
 ## Flow 1: Manager Initiates and Assigns Work
 
@@ -184,7 +184,7 @@ This document describes the step-by-step interactions users have with Checkmate 
 8. Admin sends credentials/invite to new user
 9. New user receives email and sets up account
 
-**Outcome**: New user can log in and access Checkmate based on assigned role
+**Outcome**: New user can log in and access Ordo based on assigned role
 
 ## Common User Journeys
 
