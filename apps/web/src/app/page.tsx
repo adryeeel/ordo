@@ -1,16 +1,13 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
-import { Header } from '@/components/header';
+import { LandingPage } from '@/pages/landing/landing-page';
 
 export const metadata: Metadata = {
-    title: 'Ordo | Centralized Business Management & Automation',
-    description: 'Centralize your business operations from request to delivery.',
+    title: 'Ordo — From client work to approved invoice',
+    description:
+        'One structured workflow to assign client work, track progress, approve delivery, and automate billing.',
 };
 
 export default function Page() {
-    return (
-        <main>
-            <Header />
-        </main>
-    );
+    return <LandingPage />;
 }
