@@ -5,7 +5,7 @@ const config: NextConfig = {
     reactCompiler: true,
     output: 'standalone',
     transpilePackages: ['@ordo/ui'],
-    experimental: { useTypeScriptCli: true },
+    allowedDevOrigins: ['192.168.1.76'],
 };
 
 export default config;

@@ -14,7 +14,8 @@ The repository currently reflects an early implementation foundation rather than
 The current codebase is centered on the presentation layer:
 
 - The app shell is composed from the Next.js App Router under `apps/web/src/app`.
-- The main page renders a branded landing experience and a header component.
+- The landing page is organized as a feature under `apps/web/src/features/landing`, keeping its
+  composition, components, hooks, helpers, and content outside Next.js route directories.
 - Theme support is provided through the shared UI package.
 
 ## What is not implemented yet

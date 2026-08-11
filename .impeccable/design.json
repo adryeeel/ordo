@@ -1,0 +1,426 @@
+{
+    "schemaVersion": 2,
+    "generatedAt": "2026-08-11T17:40:47Z",
+    "title": "Design System: Ordo",
+    "extensions": {
+        "colorMeta": {
+            "approval-green": {
+                "role": "primary",
+                "displayName": "Approval Green",
+                "canonical": "oklch(0.508 0.118 165.612)",
+                "tonalRamp": [
+                    "oklch(0.15 0.118 165.612)",
+                    "oklch(0.25 0.118 165.612)",
+                    "oklch(0.35 0.118 165.612)",
+                    "oklch(0.45 0.118 165.612)",
+                    "oklch(0.55 0.118 165.612)",
+                    "oklch(0.65 0.105 165.612)",
+                    "oklch(0.80 0.075 165.612)",
+                    "oklch(0.95 0.025 165.612)"
+                ]
+            },
+            "approval-green-dark": {
+                "role": "primary",
+                "displayName": "Night Approval Green",
+                "canonical": "oklch(0.432 0.095 166.913)",
+                "tonalRamp": [
+                    "oklch(0.15 0.095 166.913)",
+                    "oklch(0.25 0.095 166.913)",
+                    "oklch(0.35 0.095 166.913)",
+                    "oklch(0.45 0.095 166.913)",
+                    "oklch(0.55 0.09 166.913)",
+                    "oklch(0.65 0.08 166.913)",
+                    "oklch(0.80 0.055 166.913)",
+                    "oklch(0.95 0.018 166.913)"
+                ]
+            },
+            "approval-foreground": {
+                "role": "neutral",
+                "displayName": "Approval Porcelain",
+                "canonical": "oklch(0.979 0.021 166.113)",
+                "tonalRamp": [
+                    "oklch(0.15 0.021 166.113)",
+                    "oklch(0.25 0.021 166.113)",
+                    "oklch(0.35 0.021 166.113)",
+                    "oklch(0.45 0.021 166.113)",
+                    "oklch(0.55 0.021 166.113)",
+                    "oklch(0.65 0.021 166.113)",
+                    "oklch(0.80 0.021 166.113)",
+                    "oklch(0.95 0.021 166.113)"
+                ]
+            },
+            "deep-operational-green": {
+                "role": "primary",
+                "displayName": "Deep Operational Green",
+                "canonical": "#16352c",
+                "tonalRamp": [
+                    "oklch(0.15 0.04 165)",
+                    "oklch(0.25 0.05 165)",
+                    "oklch(0.35 0.06 165)",
+                    "oklch(0.45 0.065 165)",
+                    "oklch(0.55 0.07 165)",
+                    "oklch(0.65 0.065 165)",
+                    "oklch(0.80 0.045 165)",
+                    "oklch(0.95 0.015 165)"
+                ]
+            },
+            "soft-success-green": {
+                "role": "primary",
+                "displayName": "Soft Success Green",
+                "canonical": "#9fe7c6",
+                "tonalRamp": [
+                    "oklch(0.15 0.075 165)",
+                    "oklch(0.25 0.085 165)",
+                    "oklch(0.35 0.095 165)",
+                    "oklch(0.45 0.105 165)",
+                    "oklch(0.55 0.11 165)",
+                    "oklch(0.65 0.10 165)",
+                    "oklch(0.80 0.075 165)",
+                    "oklch(0.95 0.025 165)"
+                ]
+            },
+            "porcelain": {
+                "role": "neutral",
+                "displayName": "Porcelain",
+                "canonical": "oklch(1 0 0)",
+                "tonalRamp": [
+                    "oklch(0.15 0 0)",
+                    "oklch(0.25 0 0)",
+                    "oklch(0.35 0 0)",
+                    "oklch(0.45 0 0)",
+                    "oklch(0.55 0 0)",
+                    "oklch(0.65 0 0)",
+                    "oklch(0.80 0 0)",
+                    "oklch(0.95 0 0)"
+                ]
+            },
+            "ink": {
+                "role": "neutral",
+                "displayName": "Ink",
+                "canonical": "oklch(0.148 0.004 228.8)",
+                "tonalRamp": [
+                    "oklch(0.15 0.004 228.8)",
+                    "oklch(0.25 0.004 228.8)",
+                    "oklch(0.35 0.004 228.8)",
+                    "oklch(0.45 0.004 228.8)",
+                    "oklch(0.55 0.004 228.8)",
+                    "oklch(0.65 0.004 228.8)",
+                    "oklch(0.80 0.003 228.8)",
+                    "oklch(0.95 0.001 228.8)"
+                ]
+            },
+            "cool-paper": {
+                "role": "neutral",
+                "displayName": "Cool Paper",
+                "canonical": "oklch(0.963 0.002 197.1)",
+                "tonalRamp": [
+                    "oklch(0.15 0.002 197.1)",
+                    "oklch(0.25 0.002 197.1)",
+                    "oklch(0.35 0.002 197.1)",
+                    "oklch(0.45 0.002 197.1)",
+                    "oklch(0.55 0.002 197.1)",
+                    "oklch(0.65 0.002 197.1)",
+                    "oklch(0.80 0.002 197.1)",
+                    "oklch(0.95 0.002 197.1)"
+                ]
+            },
+            "graphite": {
+                "role": "neutral",
+                "displayName": "Graphite",
+                "canonical": "oklch(0.47 0.021 213.5)",
+                "tonalRamp": [
+                    "oklch(0.15 0.021 213.5)",
+                    "oklch(0.25 0.021 213.5)",
+                    "oklch(0.35 0.021 213.5)",
+                    "oklch(0.45 0.021 213.5)",
+                    "oklch(0.55 0.021 213.5)",
+                    "oklch(0.65 0.018 213.5)",
+                    "oklch(0.80 0.012 213.5)",
+                    "oklch(0.95 0.004 213.5)"
+                ]
+            },
+            "hairline": {
+                "role": "neutral",
+                "displayName": "Hairline",
+                "canonical": "oklch(0.925 0.005 214.3)",
+                "tonalRamp": [
+                    "oklch(0.15 0.005 214.3)",
+                    "oklch(0.25 0.005 214.3)",
+                    "oklch(0.35 0.005 214.3)",
+                    "oklch(0.45 0.005 214.3)",
+                    "oklch(0.55 0.005 214.3)",
+                    "oklch(0.65 0.005 214.3)",
+                    "oklch(0.80 0.005 214.3)",
+                    "oklch(0.95 0.003 214.3)"
+                ]
+            },
+            "night-surface": {
+                "role": "neutral",
+                "displayName": "Night Surface",
+                "canonical": "oklch(0.218 0.008 223.9)",
+                "tonalRamp": [
+                    "oklch(0.15 0.008 223.9)",
+                    "oklch(0.25 0.008 223.9)",
+                    "oklch(0.35 0.008 223.9)",
+                    "oklch(0.45 0.008 223.9)",
+                    "oklch(0.55 0.008 223.9)",
+                    "oklch(0.65 0.007 223.9)",
+                    "oklch(0.80 0.005 223.9)",
+                    "oklch(0.95 0.002 223.9)"
+                ]
+            },
+            "night-muted": {
+                "role": "neutral",
+                "displayName": "Night Muted",
+                "canonical": "oklch(0.275 0.011 216.9)",
+                "tonalRamp": [
+                    "oklch(0.15 0.011 216.9)",
+                    "oklch(0.25 0.011 216.9)",
+                    "oklch(0.35 0.011 216.9)",
+                    "oklch(0.45 0.011 216.9)",
+                    "oklch(0.55 0.011 216.9)",
+                    "oklch(0.65 0.009 216.9)",
+                    "oklch(0.80 0.006 216.9)",
+                    "oklch(0.95 0.002 216.9)"
+                ]
+            },
+            "night-secondary": {
+                "role": "neutral",
+                "displayName": "Night Secondary",
+                "canonical": "oklch(0.723 0.014 214.4)",
+                "tonalRamp": [
+                    "oklch(0.15 0.014 214.4)",
+                    "oklch(0.25 0.014 214.4)",
+                    "oklch(0.35 0.014 214.4)",
+                    "oklch(0.45 0.014 214.4)",
+                    "oklch(0.55 0.014 214.4)",
+                    "oklch(0.65 0.014 214.4)",
+                    "oklch(0.80 0.01 214.4)",
+                    "oklch(0.95 0.003 214.4)"
+                ]
+            },
+            "destructive": {
+                "role": "primary",
+                "displayName": "Corrective Red",
+                "canonical": "oklch(0.577 0.245 27.325)",
+                "tonalRamp": [
+                    "oklch(0.15 0.12 27.325)",
+                    "oklch(0.25 0.17 27.325)",
+                    "oklch(0.35 0.21 27.325)",
+                    "oklch(0.45 0.235 27.325)",
+                    "oklch(0.55 0.245 27.325)",
+                    "oklch(0.65 0.22 27.325)",
+                    "oklch(0.80 0.14 27.325)",
+                    "oklch(0.95 0.04 27.325)"
+                ]
+            }
+        },
+        "typographyMeta": {
+            "display": {
+                "displayName": "Display",
+                "purpose": "Hero statements only; one meaningful phrase may carry Approval Green."
+            },
+            "headline": {
+                "displayName": "Headline",
+                "purpose": "Major section propositions and conversion moments."
+            },
+            "title": {
+                "displayName": "Title",
+                "purpose": "Cards, dialogs, and product-preview headings."
+            },
+            "body": {
+                "displayName": "Body",
+                "purpose": "Explanatory copy with generous leading and controlled measure."
+            },
+            "label": {
+                "displayName": "Operational Label",
+                "purpose": "Workflow stages, statuses, metadata, and compact categories."
+            }
+        },
+        "shadows": [
+            {
+                "name": "quiet-lift",
+                "value": "0 1px 3px rgb(0 0 0 / 0.10)",
+                "purpose": "Selected tabs, flags, and compact state surfaces."
+            },
+            {
+                "name": "ambient-float",
+                "value": "0 10px 15px -3px rgb(0 0 0 / 0.10)",
+                "purpose": "Floating header and waitlist form."
+            },
+            {
+                "name": "preview-depth",
+                "value": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+                "purpose": "Hero preview and desktop preferences window."
+            },
+            {
+                "name": "carved-track-light",
+                "value": "inset 0 1px 3px rgb(0 0 0 / 0.10), inset 0 -1px 0 rgb(255 255 255 / 0.55)",
+                "purpose": "Light-mode segmented controls."
+            },
+            {
+                "name": "carved-track-dark",
+                "value": "inset 0 1px 4px rgb(0 0 0 / 0.45)",
+                "purpose": "Dark-mode segmented controls without a white lower highlight."
+            }
+        ],
+        "motion": [
+            {
+                "name": "ease-arrival",
+                "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+                "purpose": "Confident shared-surface arrivals and segmented selection."
+            },
+            {
+                "name": "state-fast",
+                "value": "200ms ease-out",
+                "purpose": "Hover, focus, and small state feedback."
+            },
+            {
+                "name": "selector-slide",
+                "value": "300ms cubic-bezier(0.16, 1, 0.3, 1)",
+                "purpose": "Theme and language indicator movement."
+            },
+            {
+                "name": "preferences-morph",
+                "value": "380ms total: 50ms clear + 330ms transform",
+                "purpose": "Desktop gear-to-window shared-surface continuity."
+            },
+            {
+                "name": "mobile-menu-reveal",
+                "value": "500ms cubic-bezier(0.22, 1, 0.36, 1)",
+                "purpose": "Full-screen mobile menu clip reveal and exit."
+            }
+        ],
+        "breakpoints": [
+            {
+                "name": "form-inline",
+                "value": "480px"
+            },
+            {
+                "name": "sm",
+                "value": "640px"
+            },
+            {
+                "name": "md",
+                "value": "768px"
+            },
+            {
+                "name": "lg",
+                "value": "1024px"
+            }
+        ]
+    },
+    "components": [
+        {
+            "name": "Primary Button",
+            "kind": "button",
+            "refersTo": "button-primary",
+            "description": "Compact Approval Green pill for the page's primary action.",
+            "html": "<button class=\"ds-button-primary\">Join the waitlist <svg aria-hidden=\"true\" viewBox=\"0 0 20 20\"><path d=\"M4 10h12m-5-5 5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+            "css": ".ds-button-primary { display:inline-flex; height:40px; align-items:center; justify-content:center; gap:6px; padding:0 16px; border:0; border-radius:999px; background:var(--primary); color:var(--primary-foreground); font:500 14px/1 Inter,ui-sans-serif,system-ui,sans-serif; transition:background-color 180ms ease,transform 120ms ease,box-shadow 180ms ease; } .ds-button-primary svg { width:16px; height:16px; } .ds-button-primary:hover { background:color-mix(in oklab,var(--primary) 80%,transparent); } .ds-button-primary:active { transform:translateY(1px); } .ds-button-primary:focus-visible { outline:0; box-shadow:0 0 0 3px color-mix(in oklab,var(--ring) 30%,transparent); }"
+        },
+        {
+            "name": "Quiet Icon Button",
+            "kind": "button",
+            "refersTo": "button-quiet",
+            "description": "Circular secondary action for menu, close, back, and settings controls.",
+            "html": "<button class=\"ds-button-icon\" aria-label=\"Settings\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\"/><path d=\"M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21h-4v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3v-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3h4v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9c.13.38.36.72.66 1 .3.28.69.42 1.1.4H21v4h-.09a1.7 1.7 0 0 0-1.51.6Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"/></svg></button>",
+            "css": ".ds-button-icon { display:grid; width:40px; height:40px; place-items:center; border:0; border-radius:999px; background:var(--muted); color:var(--muted-foreground); transition:background-color 180ms ease,color 180ms ease,transform 120ms ease; } .ds-button-icon svg { width:18px; height:18px; } .ds-button-icon:hover { background:var(--accent); color:var(--foreground); } .ds-button-icon:active { transform:scale(.96); } .ds-button-icon:focus-visible { outline:0; box-shadow:0 0 0 3px color-mix(in oklab,var(--ring) 30%,transparent); }"
+        },
+        {
+            "name": "Waitlist Field",
+            "kind": "input",
+            "refersTo": "input-pill",
+            "description": "Responsive email field with the primary action contained in one form surface.",
+            "html": "<form class=\"ds-waitlist\"><label for=\"ds-email\">Work email</label><input id=\"ds-email\" type=\"email\" placeholder=\"you@company.com\"><button>Join waitlist</button></form>",
+            "css": ".ds-waitlist { display:flex; width:min(100%,576px); min-height:52px; align-items:center; gap:8px; padding:6px; border:1px solid var(--border); border-radius:999px; background:var(--card); box-shadow:0 10px 15px -3px color-mix(in oklab,var(--foreground) 5%,transparent); } .ds-waitlist label { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); } .ds-waitlist input { min-width:0; flex:1; height:40px; padding:0 16px; border:0; background:transparent; color:var(--foreground); font:400 14px/1 Inter,ui-sans-serif,system-ui,sans-serif; outline:0; } .ds-waitlist input::placeholder { color:var(--muted-foreground); } .ds-waitlist button { height:40px; padding:0 16px; border:0; border-radius:999px; background:var(--primary); color:var(--primary-foreground); font-weight:500; } .ds-waitlist:focus-within { box-shadow:0 0 0 3px color-mix(in oklab,var(--primary) 15%,transparent); } @media(max-width:479px){.ds-waitlist{align-items:stretch; flex-direction:column; border-radius:18px}.ds-waitlist button{width:100%}}"
+        },
+        {
+            "name": "Navigation Link",
+            "kind": "nav",
+            "description": "Quiet centered desktop navigation link with a tonal pill hover.",
+            "html": "<a class=\"ds-nav-link\" href=\"#workflow\">Workflow</a>",
+            "css": ".ds-nav-link { display:inline-flex; padding:8px 16px; border-radius:999px; color:var(--muted-foreground); font:400 14px/1 Inter,ui-sans-serif,system-ui,sans-serif; text-decoration:none; transition:background-color 180ms ease,color 180ms ease; } .ds-nav-link:hover { background:var(--muted); color:var(--foreground); } .ds-nav-link:focus-visible { outline:2px solid var(--ring); outline-offset:4px; }"
+        },
+        {
+            "name": "Status Chip",
+            "kind": "chip",
+            "description": "Compact semantic status for product previews.",
+            "html": "<span class=\"ds-status\">In progress</span>",
+            "css": ".ds-status { display:inline-flex; align-items:center; min-height:24px; padding:4px 10px; border:1px solid color-mix(in oklab,var(--primary) 15%,transparent); border-radius:999px; background:color-mix(in oklab,var(--primary) 8%,transparent); color:var(--primary); font:500 10px/1 Inter,ui-sans-serif,system-ui,sans-serif; }"
+        },
+        {
+            "name": "Outcome Card",
+            "kind": "card",
+            "refersTo": "card-standard",
+            "description": "Large editorial card that pairs a compact category with a clear operational outcome.",
+            "html": "<article class=\"ds-outcome\"><span class=\"ds-outcome-label\">Clarity</span><h3>Know what is owned and what comes next.</h3><p>Scope, assignments, status, and decisions stay attached to the work.</p></article>",
+            "css": ".ds-outcome { min-height:320px; padding:32px; border:1px solid var(--border); border-radius:28px; background:var(--card); color:var(--card-foreground); transition:transform 280ms ease-out; } .ds-outcome:hover { transform:translateY(-4px); } .ds-outcome-label { display:block; margin:64px 0 12px; color:var(--primary); font:600 10px/1.2 Inter,ui-sans-serif,system-ui,sans-serif; letter-spacing:.15em; text-transform:uppercase; } .ds-outcome h3 { max-width:24rem; margin:0; font:600 20px/1.4 Inter,ui-sans-serif,system-ui,sans-serif; letter-spacing:-.035em; } .ds-outcome p { max-width:24rem; margin:16px 0 0; color:var(--muted-foreground); font:400 14px/1.5 Inter,ui-sans-serif,system-ui,sans-serif; }"
+        },
+        {
+            "name": "Segmented Selector",
+            "kind": "custom",
+            "description": "Carved preference track with one elevated selected segment.",
+            "html": "<div class=\"ds-segmented\" role=\"group\" aria-label=\"Theme\"><button>Light</button><button aria-pressed=\"true\">System</button><button>Dark</button></div>",
+            "css": ".ds-segmented { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; padding:4px; border-radius:18px; background:var(--muted); box-shadow:inset 0 1px 3px rgb(0 0 0 / .10),inset 0 -1px 0 rgb(255 255 255 / .55); } .ds-segmented button { min-height:44px; padding:0 10px; border:0; border-radius:14px; background:transparent; color:var(--muted-foreground); font:500 12px/1 Inter,ui-sans-serif,system-ui,sans-serif; transition:background-color 300ms cubic-bezier(.16,1,.3,1),color 180ms ease,box-shadow 300ms cubic-bezier(.16,1,.3,1); } .ds-segmented button[aria-pressed=true] { background:var(--background); color:var(--foreground); box-shadow:0 1px 3px rgb(0 0 0 / .10); } .ds-segmented button:focus-visible { outline:2px solid var(--ring); }"
+        },
+        {
+            "name": "Preferences Window",
+            "kind": "custom",
+            "refersTo": "preferences-window",
+            "description": "Fixed desktop surface that morphs from the settings gear into full preferences.",
+            "html": "<section class=\"ds-preferences\"><header><div><h2>Preferences</h2><p>Adjust how Ordo appears for you.</p></div><button aria-label=\"Close preferences\">×</button></header><div class=\"ds-preferences-row\"><span>Theme</span><div class=\"ds-preferences-track\">Light · System · Dark</div></div></section>",
+            "css": ".ds-preferences { width:352px; min-height:298px; padding:20px; border:1px solid color-mix(in oklab,var(--border) 70%,transparent); border-radius:24px; background:color-mix(in oklab,var(--background) 95%,transparent); color:var(--foreground); box-shadow:0 25px 50px -12px rgb(0 0 0 / .25); font-family:Inter,ui-sans-serif,system-ui,sans-serif; } .ds-preferences header { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; } .ds-preferences h2 { margin:0; font-size:20px; line-height:1.4; letter-spacing:-.03em; } .ds-preferences p { margin:4px 0 0; color:var(--muted-foreground); font-size:12px; } .ds-preferences header button { width:36px; height:36px; border:0; border-radius:999px; background:var(--muted); color:var(--muted-foreground); } .ds-preferences header button:hover { background:var(--accent); color:var(--foreground); } .ds-preferences header button:focus-visible { outline:2px solid var(--ring); } .ds-preferences-row { margin-top:28px; color:var(--muted-foreground); font-size:12px; } .ds-preferences-track { margin-top:10px; padding:14px; border-radius:18px; background:var(--muted); color:var(--foreground); box-shadow:inset 0 1px 3px rgb(0 0 0 / .10); }"
+        }
+    ],
+    "narrative": {
+        "northStar": "The Quiet Operations Room",
+        "overview": "Ordo feels like a calm, well-run space where consequential work becomes legible. The design is precise, editorial, and operational without becoming cold: generous whitespace gives decisions room, soft geometry lowers friction, and restrained green accents mark progress, approval, and action. The visual system should communicate that the product has already organized the problem.\n\nThe interface is quiet by default and expressive only where meaning increases. Product previews carry the operational detail; surrounding marketing surfaces remain spacious and direct. Ambient layering provides depth without turning the page into glass, while motion explains continuity and state rather than decorating static content.",
+        "keyCharacteristics": [
+            "Calm, precise, and editorial.",
+            "Porcelain and ink neutrals with rare Approval Green emphasis.",
+            "Soft edges, thin hairlines, and bounded ambient depth.",
+            "Large decisive typography paired with compact operational labels.",
+            "Motion that reveals workflow, selection, or shared-surface continuity.",
+            "Responsive compositions that simplify structure without removing function."
+        ],
+        "rules": [
+            {
+                "name": "The Approval Rarity Rule",
+                "body": "Approval Green marks action, state, or verified progress. It is never used as general decoration or spread evenly across a page.",
+                "section": "colors"
+            },
+            {
+                "name": "The Tonal Reversal Rule",
+                "body": "Dark mode changes surface hierarchy and shadow character, not brand meaning. White inset highlights disappear; dark controls use black inset depth.",
+                "section": "colors"
+            },
+            {
+                "name": "The One Typeface Rule",
+                "body": "Do not add a display font for personality. Use scale, measure, weight, and rhythm to create hierarchy while preserving operational clarity.",
+                "section": "typography"
+            },
+            {
+                "name": "The Bounded Depth Rule",
+                "body": "Blur and strong shadow belong to small fixed surfaces or one focal preview. Never wash an entire section in glass or stack a border and large shadow on every card.",
+                "section": "elevation"
+            }
+        ],
+        "dos": [
+            "Do use Approval Green for decisions, actions, progress, and completed states.",
+            "Do pair large editorial statements with compact operational detail.",
+            "Do keep surfaces mostly flat and let one preview or floating control carry the strongest depth.",
+            "Do preserve visible content before hydration and respect reduced-motion preferences.",
+            "Do use asymmetric desktop grids and simplify them into a direct vertical story on mobile.",
+            "Do give keyboard focus a visible ring and keep mobile touch targets at least 40–44px."
+        ],
+        "donts": [
+            "Don't introduce generic SaaS gradients, gradient text, or multicolor decorative accents.",
+            "Don't use excessive glass, full-page blur, or elevation on every card.",
+            "Don't add decorative motion; animation must explain state, selection, workflow, or continuity.",
+            "Don't use white inset highlights on dark segmented controls.",
+            "Don't replace the authored logo and flags with text placeholders or emoji.",
+            "Don't make the interface feel like a dense enterprise dashboard outside the product previews."
+        ]
+    }
+}
