@@ -1,3 +1,5 @@
+import { Settings as SettingsLucideIcon } from 'lucide-react';
+
 type IconProps = {
     className?: string;
 };
@@ -42,4 +44,34 @@ export function CheckIcon({ className }: IconProps) {
             />
         </svg>
     );
+}
+
+export function MenuIcon({ className }: IconProps) {
+    return (
+        <svg aria-hidden='true' viewBox='0 0 20 20' fill='none' className={className}>
+            <path
+                d='M3.5 6.5h13m-13 7h13'
+                stroke='currentColor'
+                strokeWidth='1.7'
+                strokeLinecap='round'
+            />
+        </svg>
+    );
+}
+
+export function CloseIcon({ className }: IconProps) {
+    return (
+        <svg aria-hidden='true' viewBox='0 0 20 20' fill='none' className={className}>
+            <path
+                d='m5 5 10 10M15 5 5 15'
+                stroke='currentColor'
+                strokeWidth='1.7'
+                strokeLinecap='round'
+            />
+        </svg>
+    );
+}
+
+export function SettingsIcon({ className }: IconProps) {
+    return <SettingsLucideIcon aria-hidden='true' className={className} strokeWidth={1.7} />;
 }

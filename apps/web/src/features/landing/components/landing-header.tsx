@@ -3,11 +3,12 @@ import { ThemeToggle } from '@ordo/ui/internal/theme';
 import { Button } from '@ordo/ui/shadcn/button';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
+import { MobileMenu } from '@/features/landing/components/menu/mobile-menu';
 
 export function LandingHeader() {
     return (
-        <header className='border-border/60 bg-background/80 fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl'>
-            <div className='mx-auto flex h-18 max-w-7xl items-center px-5 sm:px-8'>
+        <header className='pointer-events-none fixed inset-x-0 top-3 z-50 px-3 sm:px-5'>
+            <div className='border-border/70 bg-background/80 shadow-foreground/6 pointer-events-auto relative mx-auto flex h-14 max-w-7xl items-center rounded-full border px-3 shadow-lg backdrop-blur-xl sm:px-4 dark:shadow-none'>
                 <OrdoBranding priority />
 
                 <nav
@@ -26,12 +27,16 @@ export function LandingHeader() {
                 </nav>
 
                 <div className='ml-auto flex items-center gap-2'>
-                    <ThemeToggle />
-                    <a href='#waitlist'>
-                        <Button size='sm' className='hidden px-4 sm:inline-flex'>
-                            Join the waitlist
-                        </Button>
-                    </a>
+                    <div className='hidden md:block'>
+                        <ThemeToggle />
+                    </div>
+                    <Button
+                        size='sm'
+                        nativeButton={false}
+                        className='hidden px-4 md:inline-flex'
+                        render={<a href='#waitlist'>Join the waitlist</a>}
+                    />
+                    <MobileMenu />
                 </div>
             </div>
         </header>

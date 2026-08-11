@@ -8,7 +8,7 @@ import { HERO_PILLARS } from '@/features/landing/constants/landing-content';
 
 export function HeroSection() {
     return (
-        <section className='relative flex min-h-dvh flex-col justify-end overflow-hidden pt-28 pb-10 sm:py-10'>
+        <section className='relative flex min-h-dvh flex-col justify-end overflow-hidden pt-28 pb-10 sm:pt-24 sm:pb-10'>
             <div className='absolute inset-0 -z-10 bg-[radial-gradient(circle,var(--border)_1px,transparent_1px)] mask-[linear-gradient(to_bottom,black,transparent_82%)] bg-size-[48px_48px] opacity-35 sm:bg-size-[64px_64px]' />
             <div className='bg-primary/10 absolute top-20 left-1/2 -z-10 h-144 w-216 -translate-x-1/2 rounded-full blur-[100px]' />
 

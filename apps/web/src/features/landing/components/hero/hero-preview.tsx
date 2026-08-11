@@ -2,7 +2,6 @@
 
 import { m } from 'motion/react';
 
-import { OrdoLogo } from '@ordo/ui/internal/branding';
 import { CheckIcon } from '@ordo/ui/internal/icons';
 
 import {
@@ -17,17 +16,13 @@ export function HeroPreview() {
         <m.div aria-hidden='true' className='relative mx-auto w-full max-w-2xl'>
             <div className='bg-primary/10 absolute -inset-8 rounded-full blur-3xl' />
             <div className='border-border/80 bg-card shadow-foreground/10 relative overflow-hidden rounded-[1.75rem] border shadow-2xl dark:shadow-none'>
-                <div className='border-border/70 flex h-12 items-center border-b px-5'>
-                    <div className='flex gap-1.5' aria-hidden='true'>
+                <div className='border-border/70 flex h-7 items-center border-b px-5'>
+                    <div className='mt-0.5 flex gap-1.5' aria-hidden='true'>
                         <span className='bg-foreground/15 size-2 rounded-full' />
                         <span className='bg-foreground/15 size-2 rounded-full' />
                         <span className='bg-foreground/15 size-2 rounded-full' />
                     </div>
-                    <div className='text-muted-foreground mx-auto flex items-center gap-2 text-[0.68rem] font-medium'>
-                        <OrdoLogo className='size-4' />
-                        Ordo Workspace
-                    </div>
-                    <span className='bg-muted size-6 rounded-full' />
+                    <p className='text-muted-foreground mx-auto text-[0.68rem] font-medium'>Ordo</p>
                 </div>
 
                 <div className='grid min-h-116 grid-cols-[4.75rem_1fr] sm:grid-cols-[10.5rem_1fr]'>
