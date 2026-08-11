@@ -23,7 +23,7 @@ export function PrinciplesSection() {
                                     </span>
                                     <span className='bg-primary size-1.5 rounded-full' />
                                 </div>
-                                <h3 className='text-base font-semibold tracking-[-0.025em]'>
+                                <h3 className='text-base font-semibold tracking-tight'>
                                     {principle.title}
                                 </h3>
                                 <p className='text-muted-foreground mt-2 text-sm leading-6'>

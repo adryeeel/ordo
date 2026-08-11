@@ -9,8 +9,8 @@ import { HERO_PILLARS } from '@/features/landing/constants/landing-content';
 export function HeroSection() {
     return (
         <section className='relative flex min-h-dvh flex-col justify-end overflow-hidden pt-28 pb-10 sm:py-10'>
-            <div className='absolute inset-0 -z-10 bg-[radial-gradient(circle,var(--border)_1px,transparent_1px)] [mask-image:linear-gradient(to_bottom,black,transparent_82%)] [background-size:48px_48px] opacity-35 sm:[background-size:64px_64px]' />
-            <div className='bg-primary/10 absolute top-20 left-1/2 -z-10 h-[36rem] w-[54rem] -translate-x-1/2 rounded-full blur-[100px]' />
+            <div className='absolute inset-0 -z-10 bg-[radial-gradient(circle,var(--border)_1px,transparent_1px)] mask-[linear-gradient(to_bottom,black,transparent_82%)] bg-size-[48px_48px] opacity-35 sm:bg-size-[64px_64px]' />
+            <div className='bg-primary/10 absolute top-20 left-1/2 -z-10 h-144 w-216 -translate-x-1/2 rounded-full blur-[100px]' />
 
             <div className='mx-auto grid max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20'>
                 <m.div

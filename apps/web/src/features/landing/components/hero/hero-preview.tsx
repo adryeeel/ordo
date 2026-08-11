@@ -30,7 +30,7 @@ export function HeroPreview() {
                     <span className='bg-muted size-6 rounded-full' />
                 </div>
 
-                <div className='grid min-h-[29rem] grid-cols-[4.75rem_1fr] sm:grid-cols-[10.5rem_1fr]'>
+                <div className='grid min-h-116 grid-cols-[4.75rem_1fr] sm:grid-cols-[10.5rem_1fr]'>
                     <aside className='border-border/70 bg-muted/30 border-r p-3 sm:p-4'>
                         <p className='text-muted-foreground mb-5 hidden text-[0.65rem] font-semibold tracking-[0.12em] uppercase sm:block'>
                             Workspace
@@ -63,10 +63,10 @@ export function HeroPreview() {
                     <div className='bg-background/40 min-w-0 p-4 sm:p-6'>
                         <div className='mb-5 flex items-start justify-between gap-3'>
                             <div>
-                                <p className='text-muted-foreground mb-1 text-[0.62rem] font-medium tracking-[0.1em] uppercase'>
+                                <p className='text-muted-foreground mb-1 text-[0.62rem] font-medium tracking-widest uppercase'>
                                     Work · WK-2048
                                 </p>
-                                <h2 className='text-base font-semibold tracking-[-0.025em] sm:text-lg'>
+                                <h2 className='text-base font-semibold tracking-tight sm:text-lg'>
                                     Brand rollout
                                 </h2>
                             </div>
