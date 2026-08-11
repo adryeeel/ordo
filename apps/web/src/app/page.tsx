@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { LandingPage } from '@/pages/landing/landing-page';
+import { LandingPage } from '@/features/landing/landing-page';
 
 export const metadata: Metadata = {
     title: 'Ordo — From client work to approved invoice',

@@ -2,10 +2,10 @@
 
 import { CheckIcon } from '@ordo/ui/internal/icons';
 
-import { WorkflowVisual } from '@/pages/landing/components/workflow/workflow-visual';
-import { WORKFLOW_STEPS } from '@/pages/landing/constants/landing-content';
-import { getStoryStepClassName } from '@/pages/landing/helpers/workflow';
-import { useActiveWorkflowStep } from '@/pages/landing/hooks/use-active-workflow-step';
+import { WorkflowVisual } from '@/features/landing/components/workflow/workflow-visual';
+import { WORKFLOW_STEPS } from '@/features/landing/constants/landing-content';
+import { getStoryStepClassName } from '@/features/landing/helpers/workflow';
+import { useActiveWorkflowStep } from '@/features/landing/hooks/use-active-workflow-step';
 
 export function WorkflowSection() {
     const { activeStep, storyRef } = useActiveWorkflowStep();
@@ -17,10 +17,7 @@ export function WorkflowSection() {
         >
             <div className='mx-auto max-w-7xl px-5 sm:px-8'>
                 <div className='mb-20 max-w-3xl lg:mb-8'>
-                    <p className='text-primary mb-4 text-xs font-semibold tracking-[0.16em] uppercase'>
-                        The Ordo workflow
-                    </p>
-                    <h2 className='text-4xl leading-[1.03] font-semibold tracking-[-0.055em] text-balance sm:text-5xl lg:text-6xl'>
+                    <h2 className='text-4xl leading-[1.03] font-semibold tracking-[-0.04em] text-balance sm:text-5xl lg:text-6xl'>
                         One continuous story, from request to revenue.
                     </h2>
                     <p className='text-muted-foreground mt-5 max-w-2xl text-base leading-7 sm:text-lg'>
@@ -33,7 +30,7 @@ export function WorkflowSection() {
                     ref={storyRef}
                     className='grid items-start gap-16 lg:grid-cols-[0.78fr_1.22fr] lg:gap-24'
                 >
-                    <div>
+                    <div className='lg:pb-[32svh]'>
                         {WORKFLOW_STEPS.map((step, index) => (
                             <article
                                 key={step.id}
@@ -43,7 +40,7 @@ export function WorkflowSection() {
                                 <p className='text-primary mb-4 text-[0.68rem] font-semibold tracking-[0.15em] uppercase'>
                                     {step.eyebrow}
                                 </p>
-                                <h3 className='max-w-lg text-3xl leading-[1.06] font-semibold tracking-[-0.05em] sm:text-4xl'>
+                                <h3 className='max-w-lg text-3xl leading-[1.06] font-semibold tracking-[-0.04em] sm:text-4xl'>
                                     {step.title}
                                 </h3>
                                 <p className='text-muted-foreground mt-5 max-w-lg text-sm leading-6 sm:text-base sm:leading-7'>
@@ -63,8 +60,10 @@ export function WorkflowSection() {
                         ))}
                     </div>
 
-                    <aside className='sticky top-28 hidden h-[calc(100svh-8.5rem)] items-center lg:flex'>
-                        <WorkflowVisual activeIndex={activeStep} />
+                    <aside className='hidden self-stretch lg:block' aria-label='Workflow preview'>
+                        <div className='sticky top-24 flex min-h-[calc(100svh-7rem)] items-center'>
+                            <WorkflowVisual activeIndex={activeStep} />
+                        </div>
                     </aside>
                 </div>
             </div>

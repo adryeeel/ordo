@@ -8,6 +8,24 @@ type OrdoBrandingProps = {
     priority?: boolean;
 };
 
+type OrdoLogoProps = {
+    className?: string;
+    priority?: boolean;
+};
+
+export function OrdoLogo({ className, priority = false }: OrdoLogoProps) {
+    return (
+        <Image
+            src='/img/ordo.svg'
+            alt=''
+            width={80}
+            height={80}
+            className={cn('size-8 dark:invert', className)}
+            priority={priority}
+        />
+    );
+}
+
 export function OrdoBranding({ className, priority = false }: OrdoBrandingProps) {
     return (
         <Link
@@ -15,14 +33,7 @@ export function OrdoBranding({ className, priority = false }: OrdoBrandingProps)
             aria-label='Ordo home'
             className={cn('group flex items-center gap-2.5', className)}
         >
-            <Image
-                src='/img/ordo.svg'
-                alt=''
-                width={32}
-                height={32}
-                className='size-8 dark:invert'
-                priority={priority}
-            />
+            <OrdoLogo priority={priority} />
             <span className='text-2xl font-semibold tracking-tighter'>Ordo.</span>
         </Link>
     );

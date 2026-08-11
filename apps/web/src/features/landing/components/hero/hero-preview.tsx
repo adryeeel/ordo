@@ -1,24 +1,20 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 
+import { OrdoLogo } from '@ordo/ui/internal/branding';
 import { CheckIcon } from '@ordo/ui/internal/icons';
-import { OrdoMark } from '@ordo/ui/internal/ordo-mark';
 
 import {
     WORK_ACTIVITY,
     WORK_ASSIGNEES,
     WORK_SUMMARY_FIELDS,
     WORKSPACE_NAV_ITEMS,
-} from '@/pages/landing/constants/landing-content';
+} from '@/features/landing/constants/landing-content';
 
 export function HeroPreview() {
     return (
-        <motion.div
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 1, ease: 'easeInOut', repeat: Infinity }}
-            className='relative mx-auto w-full max-w-2xl'
-        >
+        <m.div aria-hidden='true' className='relative mx-auto w-full max-w-2xl'>
             <div className='bg-primary/10 absolute -inset-8 rounded-full blur-3xl' />
             <div className='border-border/80 bg-card shadow-foreground/10 relative overflow-hidden rounded-[1.75rem] border shadow-2xl dark:shadow-none'>
                 <div className='border-border/70 flex h-12 items-center border-b px-5'>
@@ -28,6 +24,7 @@ export function HeroPreview() {
                         <span className='bg-foreground/15 size-2 rounded-full' />
                     </div>
                     <div className='text-muted-foreground mx-auto flex items-center gap-2 text-[0.68rem] font-medium'>
+                        <OrdoLogo className='size-4' />
                         Ordo Workspace
                     </div>
                     <span className='bg-muted size-6 rounded-full' />
@@ -120,7 +117,7 @@ export function HeroPreview() {
                                 </div>
                             </div>
                             <div className='bg-muted h-1.5 overflow-hidden rounded-full'>
-                                <motion.div
+                                <m.div
                                     initial={{ scaleX: 0 }}
                                     animate={{ scaleX: 1 }}
                                     transition={{
@@ -162,7 +159,7 @@ export function HeroPreview() {
                 </div>
             </div>
 
-            <motion.div
+            <m.div
                 // animate={{ x: [0, -4, 0], y: [0, -7, 0] }}
                 // transition={{ duration: 1, delay: 0.8, ease: 'easeInOut', repeat: Infinity }}
                 className='border-border bg-card absolute -right-2 -bottom-5 hidden rounded-2xl border p-3 pr-6 shadow-xl sm:flex sm:items-center sm:gap-3'
@@ -176,7 +173,7 @@ export function HeroPreview() {
                         Timeline updated automatically
                     </p>
                 </div>
-            </motion.div>
-        </motion.div>
+            </m.div>
+        </m.div>
     );
 }

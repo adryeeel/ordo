@@ -1,10 +1,10 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 
 import { CheckIcon } from '@ordo/ui/internal/icons';
 
-import { WORK_MILESTONES } from '@/pages/landing/constants/landing-content';
+import { WORK_MILESTONES } from '@/features/landing/constants/landing-content';
 
 export function ExecuteStage() {
     return (
@@ -19,7 +19,7 @@ export function ExecuteStage() {
                 </span>
             </div>
             <div className='bg-muted mb-5 h-1.5 overflow-hidden rounded-full'>
-                <motion.div
+                <m.div
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
                     transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}

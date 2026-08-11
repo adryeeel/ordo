@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 
-import { OutcomeIcon } from '@/pages/landing/components/outcomes/outcome-icon';
-import { OUTCOMES } from '@/pages/landing/constants/landing-content';
+import { OutcomeIcon } from '@/features/landing/components/outcomes/outcome-icon';
+import { OUTCOMES } from '@/features/landing/constants/landing-content';
 
 export function OutcomesSection() {
     return (
@@ -11,10 +11,7 @@ export function OutcomesSection() {
             <div className='mx-auto max-w-7xl px-5 sm:px-8'>
                 <div className='grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-end'>
                     <div>
-                        <p className='text-primary mb-4 text-xs font-semibold tracking-[0.16em] uppercase'>
-                            Operational calm
-                        </p>
-                        <h2 className='max-w-2xl text-4xl leading-[1.03] font-semibold tracking-[-0.055em] text-balance sm:text-5xl lg:text-6xl'>
+                        <h2 className='max-w-2xl text-4xl leading-[1.03] font-semibold tracking-[-0.04em] text-balance sm:text-5xl lg:text-6xl'>
                             Less chasing. More completed work.
                         </h2>
                     </div>
@@ -26,7 +23,7 @@ export function OutcomesSection() {
 
                 <div className='mt-16 grid gap-4 md:grid-cols-3'>
                     {OUTCOMES.map((outcome, index) => (
-                        <motion.article
+                        <m.article
                             key={outcome.label}
                             initial='rest'
                             whileHover='hover'
@@ -65,14 +62,14 @@ export function OutcomesSection() {
                             >
                                 {outcome.body}
                             </p>
-                            <motion.span
+                            <m.span
                                 variants={{ rest: { scale: 1 }, hover: { scale: 1.25 } }}
                                 transition={{ duration: 0.5, ease: 'easeOut' }}
                                 className={`absolute -right-12 -bottom-12 size-36 rounded-full border ${
                                     index === 1 ? 'border-white/10' : 'border-primary/10'
                                 }`}
                             />
-                        </motion.article>
+                        </m.article>
                     ))}
                 </div>
             </div>

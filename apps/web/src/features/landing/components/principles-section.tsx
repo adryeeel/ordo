@@ -1,4 +1,4 @@
-import { PRINCIPLES } from '@/pages/landing/constants/landing-content';
+import { PRINCIPLES } from '@/features/landing/constants/landing-content';
 
 export function PrinciplesSection() {
     return (
@@ -9,10 +9,7 @@ export function PrinciplesSection() {
             <div className='mx-auto max-w-7xl px-5 sm:px-8'>
                 <div className='grid gap-14 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24'>
                     <div>
-                        <p className='text-primary mb-4 text-xs font-semibold tracking-[0.16em] uppercase'>
-                            Built on accountability
-                        </p>
-                        <h2 className='text-3xl leading-[1.08] font-semibold tracking-[-0.05em] sm:text-4xl'>
+                        <h2 className='text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl'>
                             A system your operation can rely on.
                         </h2>
                     </div>

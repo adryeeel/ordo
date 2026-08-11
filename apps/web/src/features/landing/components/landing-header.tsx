@@ -2,7 +2,7 @@ import { OrdoBranding } from '@ordo/ui/internal/branding';
 import { ThemeToggle } from '@ordo/ui/internal/theme';
 import { Button } from '@ordo/ui/shadcn/button';
 
-import { LANDING_NAV_ITEMS } from '@/pages/landing/constants/landing-content';
+import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
 
 export function LandingHeader() {
     return (
@@ -27,9 +27,11 @@ export function LandingHeader() {
 
                 <div className='ml-auto flex items-center gap-2'>
                     <ThemeToggle />
-                    <Button size='sm' className='hidden px-4 sm:inline-flex'>
-                        Join the waitlist
-                    </Button>
+                    <a href='#waitlist'>
+                        <Button size='sm' className='hidden px-4 sm:inline-flex'>
+                            Join the waitlist
+                        </Button>
+                    </a>
                 </div>
             </div>
         </header>

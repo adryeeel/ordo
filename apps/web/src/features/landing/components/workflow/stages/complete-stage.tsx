@@ -1,6 +1,6 @@
 import { CheckIcon } from '@ordo/ui/internal/icons';
 
-import { COMPLETION_OUTPUTS } from '@/pages/landing/constants/landing-content';
+import { COMPLETION_OUTPUTS } from '@/features/landing/constants/landing-content';
 
 export function CompleteStage() {
     return (
