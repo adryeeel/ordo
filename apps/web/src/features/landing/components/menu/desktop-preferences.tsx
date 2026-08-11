@@ -46,7 +46,7 @@ export function DesktopPreferences() {
                 borderRadius: open ? 24 : 999,
             }}
             transition={surfaceTransition}
-            className='border-border/70 bg-background/95 text-foreground fixed right-5 bottom-5 z-[60] hidden overflow-hidden border shadow-2xl backdrop-blur-xl md:block dark:shadow-black/40'
+            className='border-border/70 bg-background/95 text-foreground fixed right-5 bottom-5 z-60 hidden overflow-hidden border shadow-2xl backdrop-blur-xl md:block dark:shadow-black/40'
         >
             <AnimatePresence initial={false}>
                 {open ? (
