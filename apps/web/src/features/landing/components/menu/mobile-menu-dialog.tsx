@@ -1,13 +1,12 @@
 'use client';
 
-import { CloseIcon, MenuIcon } from '@ordo/ui/internal/icons';
+import { CloseIcon } from '@ordo/ui/internal/icons';
 import {
     DialogClose,
     DialogPopup,
     DialogPortal,
     DialogRoot,
     DialogTitle,
-    DialogTrigger,
     DialogViewport,
 } from '@ordo/ui/shadcn/dialog';
 
@@ -16,7 +15,7 @@ import { MobileMenuPreferences } from '@/features/landing/components/menu/mobile
 import { getMobileMenuTitle } from '@/features/landing/helpers/mobile-menu';
 import { useMobileMenu } from '@/features/landing/hooks/use-mobile-menu';
 
-export function MobileMenu() {
+export function MobileMenuDialog() {
     const {
         open,
         view,
@@ -35,13 +34,6 @@ export function MobileMenu() {
             onOpenChange={setOpen}
             onOpenChangeComplete={handleOpenChangeComplete}
         >
-            <DialogTrigger
-                aria-label='Open navigation menu'
-                className='bg-muted hover:bg-accent focus-visible:ring-ring grid size-10 place-items-center rounded-full transition-colors outline-none focus-visible:ring-3 md:hidden'
-            >
-                <MenuIcon className='size-5' />
-            </DialogTrigger>
-
             <DialogPortal>
                 <DialogViewport className='fixed inset-0 z-70 md:hidden'>
                     <DialogPopup className='group/menu bg-background text-foreground relative size-full overflow-y-auto transition-[opacity,clip-path] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:inset(0_0_0_0)] data-ending-style:opacity-0 motion-reduce:transition-none'>

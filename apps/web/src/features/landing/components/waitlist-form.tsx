@@ -66,7 +66,7 @@ export function WaitlistForm({ id, inverse = false }: WaitlistFormProps) {
                         required
                         placeholder='you@company.com'
                         className={`placeholder:text-muted-foreground h-10 min-h-10 w-full min-w-0 flex-1 bg-transparent px-4 text-sm outline-none ${
-                            inverse ? 'text-white placeholder:text-white/65' : 'text-foreground'
+                            inverse ? 'text-white' : 'text-foreground'
                         }`}
                     />
                     <Button
