@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { getClosestWorkflowStep } from '../src/features/landing/hooks/use-active-workflow-step';
+import { getClosestWorkflowStep } from '@/features/landing/hooks/use-active-workflow-step';
 
 function createStep(top: number, height = 400) {
     const element = document.createElement('article');
