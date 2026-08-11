@@ -1,5 +1,4 @@
 import { OrdoBranding } from '@ordo/ui/internal/branding';
-import { ThemeToggle } from '@ordo/ui/internal/theme';
 import { Button } from '@ordo/ui/shadcn/button';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
@@ -27,9 +26,6 @@ export function LandingHeader() {
                 </nav>
 
                 <div className='ml-auto flex items-center gap-2'>
-                    <div className='hidden md:block'>
-                        <ThemeToggle />
-                    </div>
                     <Button
                         size='sm'
                         nativeButton={false}

@@ -35,7 +35,7 @@ export function LandingFooter() {
 
                 <Separator orientation='horizontal' className='my-6' />
 
-                <div className='flex justify-between'>
+                <div className='flex items-center justify-between gap-4'>
                     <p className='text-muted-foreground text-xs'>
                         © 2026 Ordo. All rights reserved.
                     </p>
@@ -44,18 +44,17 @@ export function LandingFooter() {
                         href='https://arocha.dev'
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='border-border bg-card text-muted-foreground -mt-3 inline-flex w-fit items-center gap-2 rounded-full border px-3.5 py-2.5 text-xs shadow-sm'
+                        className='text-muted-foreground inline-flex items-center gap-1.5 text-xs'
                         aria-label='A product by arocha.dev'
                     >
                         <span>A product by</span>
-                        <Separator orientation='vertical' />
                         <Image
                             src='/img/arocha.svg'
-                            alt=''
+                            alt='arocha.dev logo'
                             width={263}
                             height={171}
                             loading='eager'
-                            className='ml-0.5 h-4 w-auto dark:invert'
+                            className='h-6 w-auto dark:invert'
                         />
                     </a>
                 </div>
