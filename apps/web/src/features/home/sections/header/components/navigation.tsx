@@ -1,7 +1,7 @@
 import { cn } from '@ordo/ui/lib/utils';
 import { Button } from '@ordo/ui/shadcn/button';
 
-import { NAV_ITEMS } from '@/features/landing/constants/navigation';
+import { NAV_ITEMS } from '@/features/home/const/navigation';
 
 interface NavigationProps {
     className?: string;

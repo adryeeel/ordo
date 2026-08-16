@@ -1,6 +1,6 @@
 import { cn } from '@ordo/ui/lib/utils';
 
-import { NAV_ITEMS } from '@/features/landing/constants/navigation';
+import { NAV_ITEMS } from '@/features/home/const/navigation';
 
 interface Props {
     className?: string;
