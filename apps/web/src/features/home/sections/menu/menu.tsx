@@ -24,7 +24,7 @@ export function Menu({ className }: Props) {
             </DialogTrigger>
 
             <DialogPortal>
-                <DialogPopup className='bg-background/80 absolute inset-0 z-20 flex flex-col p-5 backdrop-blur-3xl transition-opacity duration-300 data-closed:opacity-0 data-ending-style:opacity-0 data-open:opacity-100 data-starting-style:opacity-0 motion-reduce:transition-none'>
+                <DialogPopup className='bg-background/80 fixed inset-0 z-20 flex flex-col p-5 backdrop-blur-3xl transition-opacity duration-300 data-closed:opacity-0 data-ending-style:opacity-0 data-open:opacity-100 data-starting-style:opacity-0 motion-reduce:transition-none'>
                     <DialogTitle className='sr-only'>Page Sections</DialogTitle>
                     <Navigation />
                     <Socials />

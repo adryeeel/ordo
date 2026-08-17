@@ -27,7 +27,7 @@ const NavigationItem = ({ href, label }: Props) => (
         render={
             <a
                 href={href}
-                className='group/link text-primary-foreground/75 hover:text-foreground flex items-center justify-between py-5 text-2xl font-semibold tracking-[-0.03em] transition-colors'
+                className='group/link text-foreground/75 hover:text-foreground flex items-center justify-between py-5 text-2xl font-semibold tracking-[-0.03em] transition-colors'
             >
                 {label}
                 <ArrowUpRightIcon className='text-muted-foreground size-5 transition-transform group-hover/link:translate-x-1' />
