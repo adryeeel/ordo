@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { Separator } from '@ordo/ui/shadcn/separator';
-import { OrdoBranding } from '@ordo/ui/internal/branding';
+import { Branding } from '@ordo/ui/internal/branding';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
 
@@ -11,7 +11,7 @@ export function LandingFooter() {
             <div className='mx-auto max-w-7xl px-5 sm:px-8'>
                 <div className='grid lg:grid-cols-[1fr_auto] lg:items-end'>
                     <div>
-                        <OrdoBranding />
+                        <Branding />
                         <p className='text-muted-foreground mt-3 text-sm leading-5 font-medium'>
                             Structured work. Clear outcomes.
                         </p>

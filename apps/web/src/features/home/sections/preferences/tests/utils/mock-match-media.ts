@@ -1,6 +1,6 @@
 import { vi } from 'vitest';
 
-type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark';
 
 interface MatchMedia {
     matches: boolean;
