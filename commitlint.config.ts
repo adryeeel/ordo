@@ -8,17 +8,25 @@ const config: UserConfig = {
             2,
             'always',
             [
-                'web',
-                'api',
+                // dependencies scope
                 'deps',
-                'repo',
+                'deps-dev',
+
+                // documentation scopes
                 'arch',
                 'infra',
+                'product',
+
+                // repository scopes
+                'repo',
                 'tools',
                 'actions',
-                'product',
-                'deps-dev',
-                'templates',
+
+                // packages scope
+                'ui',
+                'web',
+                'api',
+                'schema',
             ],
         ],
     },

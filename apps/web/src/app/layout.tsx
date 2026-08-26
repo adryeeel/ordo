@@ -1,26 +1,19 @@
 import '@ordo/ui/global.css';
 
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@ordo/ui/internal/theme';
+import { Geist } from 'next/font/google';
+import { ThemeProvider } from '@ordo/ui/provider/theme';
 
 interface Props {
-    children: React.ReactNode;
+    children: React.ReactElement;
 }
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 export default function RootLayout({ children }: Props) {
     return (
-        <html lang='en' className={inter.variable} suppressHydrationWarning>
+        <html lang='en' className={geist.variable} suppressHydrationWarning>
             <body>
-                <ThemeProvider
-                    enableSystem
-                    attribute='class'
-                    defaultTheme='system'
-                    disableTransitionOnChange
-                >
-                    {children}
-                </ThemeProvider>
+                <ThemeProvider>{children}</ThemeProvider>
             </body>
         </html>
     );

@@ -6,7 +6,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV TURBO_TELEMETRY_DISABLED=1
 
 RUN pnpm runtime set node 26 -g
-RUN pnpm i -g turbo@2.10.7
+RUN pnpm i -g turbo@2.10.12
 
 WORKDIR /app
 

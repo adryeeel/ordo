@@ -13,7 +13,7 @@ export function WorkflowSection() {
     return (
         <section
             id='workflow'
-            className='border-border bg-muted/25 scroll-mt-20 border-t py-24 sm:py-32 lg:py-40'
+            className='border-border bg-muted/25 scroll-mt-20 border-y py-24 sm:py-32 lg:py-40'
         >
             <div className='mx-auto max-w-7xl px-5 sm:px-8'>
                 <div className='mb-20 max-w-3xl lg:mb-8'>

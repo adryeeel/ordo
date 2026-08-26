@@ -131,6 +131,7 @@
     }
     html {
         @apply font-sans;
+        @apply scroll-pt-22;
         scroll-behavior: smooth;
     }
 

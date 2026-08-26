@@ -2,7 +2,7 @@
 
 import { AnimatePresence, m } from 'motion/react';
 
-import { OrdoLogo } from '@ordo/ui/internal/branding';
+import { Logo } from '@ordo/ui/internal/logo';
 import { CheckIcon } from '@ordo/ui/internal/icons';
 
 import { StageContent } from '@/features/landing/components/workflow/stage-content';
@@ -32,7 +32,7 @@ export function WorkflowVisual({ activeIndex, compact = false }: WorkflowVisualP
         >
             <div className='border-border/70 flex items-center justify-between border-b px-5 py-4'>
                 <div className='flex items-center gap-2 text-xs font-semibold'>
-                    <OrdoLogo className='size-6' />
+                    <Logo className='size-6' />
                     Work / WK-2048
                 </div>
                 <span className='bg-muted text-muted-foreground rounded-full px-2.5 py-1 text-[0.62rem]'>

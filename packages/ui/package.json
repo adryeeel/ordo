@@ -6,32 +6,38 @@
         "./hooks/*": "./src/hooks/*.ts",
         "./constants/*": "./src/constants/*.ts",
         "./global.css": "./src/style/global.css",
+        "./icons/*": "./src/components/icons/*.tsx",
+        "./internal/*": "./src/components/internal/*.tsx",
         "./shadcn/*": "./src/components/shadcn/*.tsx",
-        "./internal/*": "./src/components/internal/*.tsx"
+        "./composed/*": "./src/components/internal/*.tsx",
+        "./primitive/*": "./src/components/shadcn/*.tsx",
+        "./provider/*": "./src/components/provider/*/index.ts"
     },
     "dependencies": {
         "@base-ui/react": "^1.7.0",
+        "@icons-pack/react-simple-icons": "^13.15.1",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
-        "lucide-react": "^1.33.0",
+        "country-flag-icons": "^1.6.20",
+        "lucide-react": "^1.34.0",
         "next-themes": "^0.4.6",
-        "shadcn": "^4.19.0",
-        "tailwind-merge": "^3.6.0",
-        "tw-animate-css": "^1.4.0"
+        "tailwind-merge": "^3.6.0"
     },
     "devDependencies": {
         "@ordo/oxfmt": "workspace:*",
         "@ordo/oxlint": "workspace:*",
         "@ordo/typescript": "workspace:*",
         "@types/react": "^19.2.18",
-        "@types/react-dom": "^19.2.4",
+        "@types/react-dom": "^19.2.5",
+        "shadcn": "^4.19.0",
         "tailwindcss": "^4.3.3",
+        "tw-animate-css": "^1.4.0",
         "typescript": "^7.0.2"
     },
     "peerDependencies": {
-        "@tailwindcss/postcss": "^4",
-        "next": "^16",
-        "react": "^19",
-        "react-dom": "^19"
+        "@tailwindcss/postcss": "^4.3.3",
+        "next": "^16.3.3",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8"
     }
 }

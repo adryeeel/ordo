@@ -44,7 +44,7 @@ export function MobileMenu() {
 
             <DialogPortal>
                 <DialogViewport className='fixed inset-0 z-70 md:hidden'>
-                    <DialogPopup className='group/menu bg-background text-foreground relative size-full overflow-y-auto transition-[opacity,clip-path] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:inset(0_0_0_0)] data-ending-style:opacity-0 data-ending-style:[clip-path:inset(0_0_100%_0)] data-starting-style:opacity-0 data-starting-style:[clip-path:inset(0_0_100%_0)] motion-reduce:transition-none'>
+                    <DialogPopup className='group/menu bg-background text-foreground relative size-full overflow-y-auto transition-[opacity,clip-path] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] [clip-path:inset(0_0_0_0)] data-ending-style:opacity-0 motion-reduce:transition-none'>
                         <DialogTitle className='sr-only'>{getMobileMenuTitle(view)}</DialogTitle>
 
                         <div className='bg-primary/10 absolute top-0 right-0 -z-10 size-56 rounded-full blur-3xl' />

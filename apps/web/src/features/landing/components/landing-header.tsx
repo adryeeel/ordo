@@ -1,4 +1,4 @@
-import { OrdoBranding } from '@ordo/ui/internal/branding';
+import { Branding } from '@ordo/ui/internal/branding';
 import { Button } from '@ordo/ui/shadcn/button';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
@@ -8,7 +8,7 @@ export function LandingHeader() {
     return (
         <header className='pointer-events-none fixed inset-x-0 top-3 z-50 px-3 sm:px-5'>
             <div className='border-border/70 bg-background/80 shadow-foreground/6 pointer-events-auto relative mx-auto flex h-14 max-w-7xl items-center rounded-full border px-3 shadow-lg backdrop-blur-xl sm:px-4 dark:shadow-none'>
-                <OrdoBranding priority />
+                <Branding />
 
                 <nav
                     aria-label='Primary navigation'

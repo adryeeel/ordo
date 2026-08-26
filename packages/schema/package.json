@@ -1,0 +1,16 @@
+{
+    "name": "@ordo/schema",
+    "type": "module",
+    "exports": {
+        "./*": "./src/*.ts"
+    },
+    "scripts": {
+        "fmt:fix": "oxfmt",
+        "fmt:check": "oxfmt --check",
+        "lint:check": "oxlint",
+        "lint:fix": "oxlint --fix"
+    },
+    "dependencies": {
+        "zod": "4.4.3"
+    }
+}
