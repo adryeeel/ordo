@@ -11,16 +11,27 @@ describe('Language options', () => {
         await expect.element(pt).toBeVisible();
     });
 
-    it('pre-selects english by default', async ({ language }) => {
-        await expect.element(language.options.en).toHaveAttribute('aria-selected', 'true');
-    });
+    it('pre-selects english and disable portuguese by default', async ({ language }) => {
+        const { en, pt } = language.options;
 
-    it('disables portuguese by default', async ({ language }) => {
-        await expect.element(language.options.pt).toBeDisabled();
+        await expect.element(pt).toBeDisabled();
+        await expect.element(en).toHaveAttribute('aria-selected', 'true');
     });
 
     it('focus english when tab is pressed', async ({ language }) => {
         await userEvent.tab();
         await expect.element(language.options.en).toHaveFocus();
+    });
+
+    it('navigates with arrow keys', async ({ language }) => {
+        const { en, pt } = language.options;
+
+        await userEvent.tab();
+
+        await userEvent.keyboard('{ArrowRight}');
+        await expect.element(pt).toHaveFocus();
+
+        await userEvent.keyboard('{ArrowLeft}');
+        await expect.element(en).toHaveFocus();
     });
 });
