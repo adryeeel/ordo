@@ -1,10 +1,9 @@
-'use client';
-
-import { Branding } from '@ordo/ui/internal/branding';
+import { Button } from '@ordo/ui/primitive/button';
+import { Branding } from '@ordo/ui/composed/branding';
 
 import { Menu } from '@/features/home/sections/menu';
 
-import { ButtonCTA, Navigation } from './components';
+import { Navigation } from './components';
 
 export function Header() {
     return (
@@ -16,7 +15,11 @@ export function Header() {
 
                 <div className='ml-auto flex pr-1.5'>
                     <Menu className='md:hidden' />
-                    <ButtonCTA className='hidden md:inline-flex' />
+                    <Button
+                        nativeButton={false}
+                        className='hidden md:inline-flex'
+                        render={<a href='#waitlist'>Join the waitlist</a>}
+                    />
                 </div>
             </div>
         </header>
