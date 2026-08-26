@@ -24,9 +24,7 @@ export function Navigation({ className }: Props) {
                     >
                         {item.label}
                     </a>
-                    <span className='mx-2 hidden align-middle text-2xl leading-0 select-none md:inline'>
-                        &middot;
-                    </span>
+                    <span className='mx-[1ch] hidden select-none md:inline-block'>&middot;</span>
                 </li>
             ))}
         </nav>
