@@ -3,9 +3,8 @@
     "type": "module",
     "exports": {
         "./lib/*": "./src/lib/*.ts",
-        "./hooks/*": "./src/hooks/*.ts",
         "./constants/*": "./src/constants/*.ts",
-        "./global.css": "./src/style/global.css",
+        "./styles.css": "./src/style/global.css",
         "./composed/*": "./src/components/composed/*.tsx",
         "./primitive/*": "./src/components/primitive/*.tsx"
     },
