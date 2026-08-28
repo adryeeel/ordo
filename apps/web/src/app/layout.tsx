@@ -1,7 +1,8 @@
 import '@ordo/ui/styles.css';
 
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@ordo/ui/composed/theme';
+
+import { ThemeProvider } from '@ordo/ui/provider/theme';
 
 interface Props {
     children: React.ReactNode;
@@ -13,14 +14,7 @@ export default function RootLayout({ children }: Props) {
     return (
         <html lang='en' className={inter.variable} suppressHydrationWarning>
             <body>
-                <ThemeProvider
-                    enableSystem
-                    attribute='class'
-                    defaultTheme='system'
-                    disableTransitionOnChange
-                >
-                    {children}
-                </ThemeProvider>
+                <ThemeProvider>{children}</ThemeProvider>
             </body>
         </html>
     );

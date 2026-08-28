@@ -1,48 +1,7 @@
 'use client';
 
-import { Moon, Sun } from 'lucide-react';
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { useTheme } from 'next-themes';
-
-import {
-    DropdownMenu,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-    DropdownMenuContent,
-} from '@ordo/ui/primitive/dropdown';
-
-import { Button } from '@ordo/ui/primitive/button';
-
+import { useTheme } from '@ordo/ui/provider/theme';
 import { THEME_INDICATOR_TRANSFORMS, THEME_OPTIONS } from '@ordo/ui/constants/theme';
-
-type Props = React.ComponentProps<typeof NextThemesProvider>;
-
-export function ThemeProvider({ children, ...props }: Props) {
-    return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
-}
-
-export function ThemeToggle() {
-    const { setTheme } = useTheme();
-
-    return (
-        <DropdownMenu>
-            <DropdownMenuTrigger
-                render={
-                    <Button variant='outline' size='icon'>
-                        <Sun className='size-[1.2rem] scale-100 rotate-0 transition-all' />
-                        <Moon className='absolute size-[1.2rem] scale-0 rotate-90 transition-all' />
-                        <span className='sr-only'>Toggle theme</span>
-                    </Button>
-                }
-            />
-            <DropdownMenuContent align='end'>
-                <DropdownMenuItem onClick={() => setTheme('light')}>Light</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme('dark')}>Dark</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
-            </DropdownMenuContent>
-        </DropdownMenu>
-    );
-}
 
 export function ThemeSelector() {
     const { theme, setTheme } = useTheme();
@@ -50,7 +9,7 @@ export function ThemeSelector() {
 
     return (
         <div
-            role='group'
+            role='tablist'
             aria-label='Color theme'
             className='bg-muted/70 relative grid grid-cols-3 gap-1 rounded-2xl p-1 shadow-[inset_0_1px_3px_rgb(0_0_0/0.1),inset_0_-1px_0_rgb(255_255_255/0.55)] dark:shadow-[inset_0_1px_4px_rgb(0_0_0/0.45)]'
         >

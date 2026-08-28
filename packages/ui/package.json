@@ -6,7 +6,8 @@
         "./constants/*": "./src/constants/*.ts",
         "./styles.css": "./src/style/global.css",
         "./composed/*": "./src/components/composed/*.tsx",
-        "./primitive/*": "./src/components/primitive/*.tsx"
+        "./primitive/*": "./src/components/primitive/*.tsx",
+        "./provider/*": "./src/components/provider/*/index.ts"
     },
     "dependencies": {
         "@base-ui/react": "^1.7.0",

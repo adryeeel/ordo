@@ -1,7 +1,7 @@
 import { render } from 'vitest-browser-react';
 import { expect, test } from 'vitest';
 
-import { ThemeProvider } from '@ordo/ui/composed/theme';
+import { ThemeProvider } from '@ordo/ui/provider/theme';
 
 import { mockMatchMedia } from '@test/mock/match-media';
 import { MobileMenu } from '../src/features/landing/components/menu/mobile-menu';
@@ -29,7 +29,7 @@ test('opens and closes the mobile navigation', async () => {
     clickElement(getByRole('button', { name: 'Open preferences' }).element());
 
     await expect.element(getByRole('heading', { name: 'Preferences' }).last()).toBeVisible();
-    await expect.element(getByRole('group', { name: 'Color theme' })).toBeVisible();
+    await expect.element(getByRole('tablist', { name: 'Color theme' })).toBeVisible();
     await expect.element(getByRole('radio', { name: 'English' })).toBeVisible();
     const portugueseOption = getByRole('radio', { name: 'Portuguese' });
     await expect.element(portugueseOption).toBeVisible();

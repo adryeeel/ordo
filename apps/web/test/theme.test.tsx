@@ -2,37 +2,34 @@ import { render } from 'vitest-browser-react';
 import { test, expect, describe, afterEach } from 'vitest';
 
 import { mockMatchMedia } from '@test/mock/match-media';
-import { ThemeProvider, ThemeToggle } from '@ordo/ui/composed/theme';
+import { ThemeSelector } from '@ordo/ui/composed/theme';
+import { ThemeProvider } from '@ordo/ui/provider/theme';
 
 afterEach(() => {
     localStorage.clear();
 });
 
-describe('ThemeToggle', () => {
+describe('ThemeSelector', () => {
     test('change theme to dark', async () => {
-        const { getByRole, getByText } = await render(
+        const { getByRole } = await render(
             <ThemeProvider>
-                <ThemeToggle />
+                <ThemeSelector />
             </ThemeProvider>,
         );
 
-        await getByRole('button').click();
-        await getByText(/dark/i).click();
-
-        await expect.element(document.documentElement).toHaveAttribute('data-theme', 'dark');
+        await getByRole('button', { name: /dark/i }).click();
+        await expect.element(document.documentElement).toHaveClass('dark');
     });
 
     test('change theme to light', async () => {
-        const { getByRole, getByText } = await render(
+        const { getByRole } = await render(
             <ThemeProvider>
-                <ThemeToggle />
+                <ThemeSelector />
             </ThemeProvider>,
         );
 
-        await getByRole('button').click();
-        await getByText(/light/i).click();
-
-        await expect.element(document.documentElement).toHaveAttribute('data-theme', 'light');
+        await getByRole('button', { name: /light/i }).click();
+        await expect.element(document.documentElement).toHaveClass('light');
     });
 
     test('theme is light by default', async () => {
@@ -40,11 +37,11 @@ describe('ThemeToggle', () => {
 
         await render(
             <ThemeProvider>
-                <ThemeToggle />
+                <ThemeSelector />
             </ThemeProvider>,
         );
 
-        await expect.element(document.documentElement).toHaveAttribute('data-theme', 'light');
+        await expect.element(document.documentElement).toHaveClass('light');
     });
 
     test('theme is dark by default', async () => {
@@ -52,10 +49,10 @@ describe('ThemeToggle', () => {
 
         await render(
             <ThemeProvider>
-                <ThemeToggle />
+                <ThemeSelector />
             </ThemeProvider>,
         );
 
-        await expect.element(document.documentElement).toHaveAttribute('data-theme', 'dark');
+        await expect.element(document.documentElement).toHaveClass('dark');
     });
 });
