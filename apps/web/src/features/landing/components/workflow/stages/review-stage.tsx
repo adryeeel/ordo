@@ -1,4 +1,4 @@
-import { CheckIcon } from '@ordo/ui/internal/icons';
+import { CheckIcon } from '@ordo/ui/composed/icons';
 
 export function ReviewStage() {
     return (

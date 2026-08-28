@@ -9,9 +9,9 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
     DropdownMenuContent,
-} from '@ordo/ui/shadcn/dropdown';
+} from '@ordo/ui/primitive/dropdown';
 
-import { Button } from '@ordo/ui/shadcn/button';
+import { Button } from '@ordo/ui/primitive/button';
 
 import { THEME_INDICATOR_TRANSFORMS, THEME_OPTIONS } from '@ordo/ui/constants/theme';
 

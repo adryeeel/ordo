@@ -2,8 +2,8 @@
 
 import { AnimatePresence, m } from 'motion/react';
 
-import { ArrowRightIcon, CheckIcon } from '@ordo/ui/internal/icons';
-import { Button } from '@ordo/ui/shadcn/button';
+import { ArrowRightIcon, CheckIcon } from '@ordo/ui/composed/icons';
+import { Button } from '@ordo/ui/primitive/button';
 
 import { useWaitlistForm } from '@/features/landing/hooks/use-waitlist-form';
 

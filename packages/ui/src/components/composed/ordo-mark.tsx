@@ -1,4 +1,4 @@
-import { OrdoLogo } from '@ordo/ui/internal/branding';
+import { OrdoLogo } from '@ordo/ui/composed/branding';
 
 type OrdoMarkProps = {
     className?: string;

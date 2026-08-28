@@ -1,7 +1,7 @@
-import '@ordo/ui/global.css';
+import '@ordo/ui/styles.css';
 
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@ordo/ui/internal/theme';
+import { ThemeProvider } from '@ordo/ui/composed/theme';
 
 interface Props {
     children: React.ReactNode;

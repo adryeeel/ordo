@@ -126,8 +126,8 @@ the change before handing it off. UI behavior changes should include or update a
 - Oxlint performs type-aware and type-checked linting. Do not bypass it with broad disables or
   unsafe casts without a documented reason.
 - In `apps/web`, use `@/*` for code under `src/` and `@test/*` for test helpers.
-- Consume shared UI via published subpaths such as `@ordo/ui/shadcn/button`,
-  `@ordo/ui/internal/theme`, and `@ordo/ui/global.css`; avoid reaching into another package with
+- Consume shared UI via published subpaths such as `@ordo/ui/primitive/button`,
+  `@ordo/ui/composed/theme`, and `@ordo/ui/styles.css`; avoid reaching into another package with
   relative filesystem imports.
 - In `packages/ui`, use `@ordo/ui/*` self-references. Add new public modules to the package's
   `exports` map when the existing wildcard entries do not cover them.

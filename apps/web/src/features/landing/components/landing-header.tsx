@@ -1,5 +1,5 @@
-import { OrdoBranding } from '@ordo/ui/internal/branding';
-import { Button } from '@ordo/ui/shadcn/button';
+import { OrdoBranding } from '@ordo/ui/composed/branding';
+import { Button } from '@ordo/ui/primitive/button';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
 import { MobileMenu } from '@/features/landing/components/menu/mobile-menu';

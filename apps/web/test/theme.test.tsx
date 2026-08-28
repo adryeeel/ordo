@@ -2,7 +2,7 @@ import { render } from 'vitest-browser-react';
 import { test, expect, describe, afterEach } from 'vitest';
 
 import { mockMatchMedia } from '@test/mock/match-media';
-import { ThemeProvider, ThemeToggle } from '@ordo/ui/internal/theme';
+import { ThemeProvider, ThemeToggle } from '@ordo/ui/composed/theme';
 
 afterEach(() => {
     localStorage.clear();
