@@ -1,7 +1,7 @@
 import { render } from 'vitest-browser-react';
 import { expect, test } from 'vitest';
 
-import { ThemeProvider } from '@ordo/ui/internal/theme';
+import { ThemeProvider } from '@ordo/ui/composed/theme';
 
 import { mockMatchMedia } from '@test/mock/match-media';
 import { MobileMenu } from '../src/features/landing/components/menu/mobile-menu';

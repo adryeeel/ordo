@@ -2,8 +2,8 @@
 
 import { AnimatePresence, m } from 'motion/react';
 
-import { OrdoLogo } from '@ordo/ui/internal/branding';
-import { CheckIcon } from '@ordo/ui/internal/icons';
+import { OrdoLogo } from '@ordo/ui/composed/branding';
+import { CheckIcon } from '@ordo/ui/composed/icons';
 
 import { StageContent } from '@/features/landing/components/workflow/stage-content';
 import { WORKFLOW_STEPS } from '@/features/landing/constants/landing-content';

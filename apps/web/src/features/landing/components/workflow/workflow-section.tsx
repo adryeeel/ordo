@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckIcon } from '@ordo/ui/internal/icons';
+import { CheckIcon } from '@ordo/ui/composed/icons';
 
 import { WorkflowVisual } from '@/features/landing/components/workflow/workflow-visual';
 import { WORKFLOW_STEPS } from '@/features/landing/constants/landing-content';

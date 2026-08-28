@@ -1,7 +1,7 @@
 import type { RefObject } from 'react';
 
-import { CloseIcon } from '@ordo/ui/internal/icons';
-import { ThemeSelector } from '@ordo/ui/internal/theme';
+import { CloseIcon } from '@ordo/ui/composed/icons';
+import { ThemeSelector } from '@ordo/ui/composed/theme';
 
 import { LanguageSelector } from '@/features/landing/components/menu/language-selector';
 import type { Language } from '@/features/landing/helpers/mobile-menu';

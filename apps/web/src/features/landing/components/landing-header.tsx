@@ -1,4 +1,4 @@
-import { OrdoBranding } from '@ordo/ui/internal/branding';
+import { OrdoBranding } from '@ordo/ui/composed/branding';
 import { Button } from '@ordo/ui/primitive/button';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';

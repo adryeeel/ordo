@@ -1,4 +1,4 @@
-import { ArrowRightIcon, SettingsIcon } from '@ordo/ui/internal/icons';
+import { ArrowRightIcon, SettingsIcon } from '@ordo/ui/composed/icons';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
 

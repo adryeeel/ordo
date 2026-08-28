@@ -2,7 +2,7 @@
 
 import { m } from 'motion/react';
 
-import { CheckIcon } from '@ordo/ui/internal/icons';
+import { CheckIcon } from '@ordo/ui/composed/icons';
 
 import {
     WORK_ACTIVITY,

@@ -1,6 +1,6 @@
 'use client';
 
-import { CloseIcon, MenuIcon } from '@ordo/ui/internal/icons';
+import { CloseIcon, MenuIcon } from '@ordo/ui/composed/icons';
 import {
     DialogClose,
     DialogPopup,

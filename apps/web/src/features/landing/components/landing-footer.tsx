@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { Separator } from '@ordo/ui/primitive/separator';
-import { OrdoBranding } from '@ordo/ui/internal/branding';
+import { OrdoBranding } from '@ordo/ui/composed/branding';
 
 import { LANDING_NAV_ITEMS } from '@/features/landing/constants/landing-content';
 

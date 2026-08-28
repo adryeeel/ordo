@@ -1,7 +1,7 @@
 import { render } from 'vitest-browser-react';
 import { afterEach, expect, test } from 'vitest';
 
-import { ThemeProvider } from '@ordo/ui/internal/theme';
+import { ThemeProvider } from '@ordo/ui/composed/theme';
 
 import { LandingMotionProvider } from '@/features/landing/components/landing-motion-provider';
 import { DesktopPreferences } from '@/features/landing/components/menu/desktop-preferences';

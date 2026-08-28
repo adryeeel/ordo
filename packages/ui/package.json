@@ -6,7 +6,7 @@
         "./hooks/*": "./src/hooks/*.ts",
         "./constants/*": "./src/constants/*.ts",
         "./global.css": "./src/style/global.css",
-        "./internal/*": "./src/components/internal/*.tsx",
+        "./composed/*": "./src/components/composed/*.tsx",
         "./primitive/*": "./src/components/primitive/*.tsx"
     },
     "dependencies": {
