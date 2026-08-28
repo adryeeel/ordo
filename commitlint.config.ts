@@ -8,6 +8,7 @@ const config: UserConfig = {
             2,
             'always',
             [
+                'ui',
                 'web',
                 'api',
                 'deps',
