@@ -9,7 +9,7 @@ import {
     DialogTitle,
     DialogTrigger,
     DialogViewport,
-} from '@ordo/ui/shadcn/dialog';
+} from '@ordo/ui/primitive/dialog';
 
 import { MobileMenuNavigation } from '@/features/landing/components/menu/mobile-menu-navigation';
 import { MobileMenuPreferences } from '@/features/landing/components/menu/mobile-menu-preferences';
