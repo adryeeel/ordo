@@ -3,7 +3,7 @@
 import { useId } from 'react';
 import { AnimatePresence, m, useReducedMotion } from 'motion/react';
 
-import { SettingsIcon } from '@ordo/ui/composed/icons';
+import { SettingsIcon } from '@ordo/ui/icons/symbols';
 
 import { DesktopPreferencesPanel } from '@/features/landing/components/menu/desktop-preferences-panel';
 import { useDesktopPreferences } from '@/features/landing/hooks/use-desktop-preferences';

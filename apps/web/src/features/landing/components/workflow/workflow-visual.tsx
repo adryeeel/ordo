@@ -3,7 +3,7 @@
 import { AnimatePresence, m } from 'motion/react';
 
 import { OrdoLogo } from '@ordo/ui/composed/branding';
-import { CheckIcon } from '@ordo/ui/composed/icons';
+import { CheckIcon } from '@ordo/ui/icons/symbols';
 
 import { StageContent } from '@/features/landing/components/workflow/stage-content';
 import { WORKFLOW_STEPS } from '@/features/landing/constants/landing-content';

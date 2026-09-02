@@ -1,4 +1,4 @@
-import { CheckIcon } from '@ordo/ui/composed/icons';
+import { CheckIcon } from '@ordo/ui/icons/symbols';
 
 import { COMPLETION_OUTPUTS } from '@/features/landing/constants/landing-content';
 

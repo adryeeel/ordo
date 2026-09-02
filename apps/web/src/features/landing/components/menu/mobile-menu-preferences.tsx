@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from '@ordo/ui/composed/icons';
+import { ArrowRightIcon } from '@ordo/ui/icons/symbols';
 import { ThemeSelector } from '@ordo/ui/composed/theme';
 
 import { LanguageSelector } from '@/features/landing/components/menu/language-selector';

@@ -5,12 +5,14 @@
         "./lib/*": "./src/lib/*.ts",
         "./constants/*": "./src/constants/*.ts",
         "./styles.css": "./src/style/global.css",
+        "./icons/*": "./src/components/icons/*.tsx",
         "./composed/*": "./src/components/composed/*.tsx",
         "./primitive/*": "./src/components/primitive/*.tsx",
         "./provider/*": "./src/components/provider/*/index.ts"
     },
     "dependencies": {
         "@base-ui/react": "^1.7.0",
+        "@icons-pack/react-simple-icons": "^13.15.1",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^1.37.0",

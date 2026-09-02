@@ -1,6 +1,6 @@
 import type { RefObject } from 'react';
 
-import { CloseIcon } from '@ordo/ui/composed/icons';
+import { CloseIcon } from '@ordo/ui/icons/symbols';
 import { ThemeSelector } from '@ordo/ui/composed/theme';
 
 import { LanguageSelector } from '@/features/landing/components/menu/language-selector';
