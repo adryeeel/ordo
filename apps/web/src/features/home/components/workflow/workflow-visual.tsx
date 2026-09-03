@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, m } from 'motion/react';
+import { m, AnimatePresence } from '@ordo/ui/provider/motion';
 
 import { OrdoLogo } from '@ordo/ui/composed/branding';
 import { CheckIcon } from '@ordo/ui/icons/symbols';

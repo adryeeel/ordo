@@ -1,6 +1,6 @@
 'use client';
 
-import { m } from 'motion/react';
+import { m } from '@ordo/ui/provider/motion';
 
 import { HeroPreview } from '@/features/home/components/hero/hero-preview';
 import { WaitlistForm } from '@/features/home/components/waitlist-form';

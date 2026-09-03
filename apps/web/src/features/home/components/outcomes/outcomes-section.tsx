@@ -1,6 +1,6 @@
 'use client';
 
-import { m } from 'motion/react';
+import { m } from '@ordo/ui/provider/motion';
 
 import { OutcomeIcon } from '@/features/home/components/outcomes/outcome-icon';
 import { OUTCOMES } from '@/features/home/const/landing-content';
