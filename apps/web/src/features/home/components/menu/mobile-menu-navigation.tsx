@@ -1,13 +1,12 @@
-import { ArrowRightIcon, SettingsIcon } from '@ordo/ui/icons/symbols';
+import { ArrowRightIcon } from '@ordo/ui/icons/symbols';
 
 import { LANDING_NAV_ITEMS } from '@/features/home/constants/landing-content';
 
 type MobileMenuNavigationProps = {
     onClose: () => void;
-    onOpenPreferences: () => void;
 };
 
-export function MobileMenuNavigation({ onClose, onOpenPreferences }: MobileMenuNavigationProps) {
+export function MobileMenuNavigation({ onClose }: MobileMenuNavigationProps) {
     return (
         <>
             <nav
@@ -28,14 +27,6 @@ export function MobileMenuNavigation({ onClose, onOpenPreferences }: MobileMenuN
             </nav>
 
             <div className='animate-in fade-in slide-in-from-bottom-3 mt-auto flex items-center gap-2 pt-10 duration-300 motion-reduce:animate-none'>
-                <button
-                    type='button'
-                    aria-label='Open preferences'
-                    onClick={onOpenPreferences}
-                    className='bg-muted hover:bg-accent focus-visible:ring-ring grid size-12 shrink-0 place-items-center rounded-full transition-colors outline-none focus-visible:ring-3'
-                >
-                    <SettingsIcon className='size-5' />
-                </button>
                 <a
                     href='#waitlist'
                     onClick={onClose}

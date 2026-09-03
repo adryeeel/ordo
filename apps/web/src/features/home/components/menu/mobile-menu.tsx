@@ -12,22 +12,11 @@ import {
 } from '@ordo/ui/primitive/dialog';
 
 import { MobileMenuNavigation } from '@/features/home/components/menu/mobile-menu-navigation';
-import { MobileMenuPreferences } from '@/features/home/components/menu/mobile-menu-preferences';
 import { getMobileMenuTitle } from '@/features/home/helpers/mobile-menu';
 import { useMobileMenu } from '@/features/home/hooks/use-mobile-menu';
 
 export function MobileMenu() {
-    const {
-        open,
-        view,
-        language,
-        setOpen,
-        setLanguage,
-        closeMenu,
-        openPreferences,
-        showNavigation,
-        handleOpenChangeComplete,
-    } = useMobileMenu();
+    const { open, view, setOpen, closeMenu, handleOpenChangeComplete } = useMobileMenu();
 
     return (
         <DialogRoot
@@ -67,18 +56,7 @@ export function MobileMenu() {
                                 </DialogClose>
                             </div>
 
-                            {view === 'navigation' ? (
-                                <MobileMenuNavigation
-                                    onClose={closeMenu}
-                                    onOpenPreferences={openPreferences}
-                                />
-                            ) : (
-                                <MobileMenuPreferences
-                                    language={language}
-                                    onBack={showNavigation}
-                                    onLanguageChange={setLanguage}
-                                />
-                            )}
+                            <MobileMenuNavigation onClose={closeMenu} />
                         </div>
                     </DialogPopup>
                 </DialogViewport>

@@ -10,7 +10,7 @@ export function LanguageFlag({ language }: LanguageFlagProps) {
             <svg
                 aria-hidden='true'
                 viewBox='0 0 20 14'
-                className='h-3.5 w-5 overflow-hidden rounded-[2px] shadow-sm'
+                className='h-3.5 w-5 overflow-hidden rounded-xs shadow-sm'
             >
                 <rect width='8' height='14' fill='#046A38' />
                 <rect x='8' width='12' height='14' fill='#DA291C' />
@@ -24,7 +24,7 @@ export function LanguageFlag({ language }: LanguageFlagProps) {
         <svg
             aria-hidden='true'
             viewBox='0 0 20 14'
-            className='h-3.5 w-5 overflow-hidden rounded-[2px] shadow-sm'
+            className='h-3.5 w-5 overflow-hidden rounded-xs shadow-sm'
         >
             <rect width='20' height='14' fill='#fff' />
             {[0, 4, 8, 12].map((y) => (

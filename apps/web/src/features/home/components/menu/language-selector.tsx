@@ -18,12 +18,12 @@ export function LanguageSelector({ language, name, onLanguageChange }: LanguageS
         <div
             role='radiogroup'
             aria-label='Language'
-            className='bg-muted/70 relative grid grid-cols-2 gap-1 rounded-2xl p-1 shadow-[inset_0_1px_3px_rgb(0_0_0_/_0.1),inset_0_-1px_0_rgb(255_255_255_/_0.55)] dark:shadow-[inset_0_1px_4px_rgb(0_0_0_/_0.45)]'
+            className='bg-muted/70 relative grid grid-cols-2 gap-1 rounded-2xl p-1 shadow-[inset_0_1px_3px_rgb(0_0_0/0.1),inset_0_-1px_0_rgb(255_255_255/0.55)] dark:shadow-[inset_0_1px_4px_rgb(0_0_0/0.45)]'
         >
             <span
                 aria-hidden='true'
                 className={cn(
-                    'bg-background absolute top-1 bottom-1 left-1 w-[calc((100%-0.75rem)/2)] rounded-xl shadow-[0_1px_3px_rgb(0_0_0_/_0.1)] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none dark:shadow-[0_1px_3px_rgb(0_0_0_/_0.35)]',
+                    'bg-background absolute top-1 bottom-1 left-1 w-[calc((100%-0.75rem)/2)] rounded-xl shadow-[0_1px_3px_rgb(0_0_0/0.1)] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none dark:shadow-[0_1px_3px_rgb(0_0_0/0.35)]',
                     getLanguageIndicatorClassName(language),
                 )}
             />
