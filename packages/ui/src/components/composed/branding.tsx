@@ -1,39 +1,34 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { cn } from '@ordo/ui/lib/utils';
 
-type OrdoBrandingProps = {
+interface Props {
     className?: string;
-    priority?: boolean;
-};
+    loading?: 'eager' | 'lazy';
+}
 
-type OrdoLogoProps = {
-    className?: string;
-    priority?: boolean;
-};
-
-export function OrdoLogo({ className, priority = false }: OrdoLogoProps) {
+export function OrdoLogo({ className, loading }: Props) {
     return (
         <Image
             src='/img/ordo.svg'
-            alt=''
+            alt='Minimalist round flower petals'
             width={80}
             height={80}
+            loading={loading}
             className={cn('size-8 dark:invert', className)}
-            priority={priority}
         />
     );
 }
 
-export function OrdoBranding({ className, priority = false }: OrdoBrandingProps) {
+export function OrdoMark({ className, loading }: Props) {
     return (
         <Link
             href='/'
-            aria-label='Ordo home'
+            aria-label='Go to home'
             className={cn('group flex items-center gap-2.5', className)}
         >
-            <OrdoLogo priority={priority} />
+            <OrdoLogo loading={loading} />
             <span className='text-2xl font-semibold tracking-tighter'>Ordo.</span>
         </Link>
     );
