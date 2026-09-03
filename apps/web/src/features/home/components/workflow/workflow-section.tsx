@@ -3,7 +3,7 @@
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
 import { WorkflowVisual } from '@/features/home/components/workflow/workflow-visual';
-import { WORKFLOW_STEPS } from '@/features/home/constants/landing-content';
+import { WORKFLOW_STEPS } from '@/features/home/const/landing-content';
 import { getStoryStepClassName } from '@/features/home/helpers/workflow';
 import { useActiveWorkflowStep } from '@/features/home/hooks/use-active-workflow-step';
 

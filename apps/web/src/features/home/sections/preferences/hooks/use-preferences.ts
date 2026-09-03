@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useScroll, useMotionValueEvent } from 'motion/react';
+
+import { useScroll, useMotionValueEvent } from '@ordo/ui/provider/motion';
 
 export function usePreferences() {
     const [hide, setHide] = useState(false);

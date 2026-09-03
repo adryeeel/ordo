@@ -1,12 +1,10 @@
-'use client';
+import { LazyMotion, MotionConfig, domAnimation } from 'motion/react';
 
-import { domAnimation, LazyMotion, MotionConfig } from 'motion/react';
-
-type LandingMotionProviderProps = {
+type Props = {
     children: React.ReactNode;
 };
 
-export function LandingMotionProvider({ children }: LandingMotionProviderProps) {
+export function MotionProvider({ children }: Props) {
     return (
         <LazyMotion features={domAnimation} strict>
             <MotionConfig reducedMotion='user'>{children}</MotionConfig>

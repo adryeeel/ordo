@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
 import { Separator } from '@ordo/ui/primitive/separator';
-import { OrdoBranding } from '@ordo/ui/composed/branding';
+import { OrdoMark } from '@ordo/ui/composed/branding';
 
-import { LANDING_NAV_ITEMS } from '@/features/home/constants/landing-content';
+import { LANDING_NAV_ITEMS } from '@/features/home/const/landing-content';
 
 export function LandingFooter() {
     return (
@@ -11,7 +11,7 @@ export function LandingFooter() {
             <div className='mx-auto max-w-7xl px-5 sm:px-8'>
                 <div className='grid lg:grid-cols-[1fr_auto] lg:items-end'>
                     <div>
-                        <OrdoBranding />
+                        <OrdoMark />
                         <p className='text-muted-foreground mt-3 text-sm leading-5 font-medium'>
                             Structured work. Clear outcomes.
                         </p>

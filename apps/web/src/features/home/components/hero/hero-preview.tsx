@@ -1,6 +1,6 @@
 'use client';
 
-import { m } from 'motion/react';
+import { m } from '@ordo/ui/provider/motion';
 
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
@@ -9,7 +9,7 @@ import {
     WORK_ASSIGNEES,
     WORK_SUMMARY_FIELDS,
     WORKSPACE_NAV_ITEMS,
-} from '@/features/home/constants/landing-content';
+} from '@/features/home/const/landing-content';
 
 export function HeroPreview() {
     return (
