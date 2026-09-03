@@ -4,7 +4,7 @@ import { m } from 'motion/react';
 
 import { HeroPreview } from '@/features/home/components/hero/hero-preview';
 import { WaitlistForm } from '@/features/home/components/waitlist-form';
-import { HERO_PILLARS } from '@/features/home/constants/landing-content';
+import { HERO_PILLARS } from '@/features/home/const/landing-content';
 
 export function HeroSection() {
     return (

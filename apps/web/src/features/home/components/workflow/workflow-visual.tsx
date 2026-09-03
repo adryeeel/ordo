@@ -6,7 +6,7 @@ import { OrdoLogo } from '@ordo/ui/composed/branding';
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
 import { StageContent } from '@/features/home/components/workflow/stage-content';
-import { WORKFLOW_STEPS } from '@/features/home/constants/landing-content';
+import { WORKFLOW_STEPS } from '@/features/home/const/landing-content';
 import {
     getSafeWorkflowIndex,
     getWorkflowProgress,

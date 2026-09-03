@@ -4,7 +4,7 @@ import { m } from 'motion/react';
 
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
-import { WORK_MILESTONES } from '@/features/home/constants/landing-content';
+import { WORK_MILESTONES } from '@/features/home/const/landing-content';
 
 export function ExecuteStage() {
     return (

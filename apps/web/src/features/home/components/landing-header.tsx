@@ -1,7 +1,7 @@
 import { OrdoBranding } from '@ordo/ui/composed/branding';
 import { Button } from '@ordo/ui/primitive/button';
 
-import { LANDING_NAV_ITEMS } from '@/features/home/constants/landing-content';
+import { LANDING_NAV_ITEMS } from '@/features/home/const/landing-content';
 import { MobileMenu } from '@/features/home/components/menu/mobile-menu';
 
 export function LandingHeader() {

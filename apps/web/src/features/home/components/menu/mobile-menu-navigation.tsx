@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from '@ordo/ui/icons/symbols';
 
-import { LANDING_NAV_ITEMS } from '@/features/home/constants/landing-content';
+import { LANDING_NAV_ITEMS } from '@/features/home/const/landing-content';
 
 type MobileMenuNavigationProps = {
     onClose: () => void;

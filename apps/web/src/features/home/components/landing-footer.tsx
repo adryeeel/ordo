@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Separator } from '@ordo/ui/primitive/separator';
 import { OrdoBranding } from '@ordo/ui/composed/branding';
 
-import { LANDING_NAV_ITEMS } from '@/features/home/constants/landing-content';
+import { LANDING_NAV_ITEMS } from '@/features/home/const/landing-content';
 
 export function LandingFooter() {
     return (
