@@ -3,10 +3,11 @@ import { HeroSection } from '@/features/home/components/hero/hero-section';
 import { LandingFooter } from '@/features/home/components/landing-footer';
 import { LandingHeader } from '@/features/home/components/landing-header';
 import { LandingMotionProvider } from '@/features/home/components/landing-motion-provider';
-import { DesktopPreferences } from '@/features/home/components/menu/desktop-preferences';
 import { OutcomesSection } from '@/features/home/components/outcomes/outcomes-section';
 import { PrinciplesSection } from '@/features/home/components/principles-section';
 import { WorkflowSection } from '@/features/home/components/workflow/workflow-section';
+
+import { Preferences } from '@/features/home/sections/preferences';
 
 export function HomePage() {
     return (
@@ -19,9 +20,9 @@ export function HomePage() {
                     <OutcomesSection />
                     <PrinciplesSection />
                     <FinalCtaSection />
+                    <Preferences />
                 </main>
                 <LandingFooter />
-                <DesktopPreferences />
             </div>
         </LandingMotionProvider>
     );
