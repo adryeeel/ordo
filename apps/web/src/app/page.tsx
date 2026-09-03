@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { LandingPage } from '@/features/landing/landing-page';
+import { HomePage } from '@/features/home/page';
 
 export const metadata: Metadata = {
     title: 'Ordo — From client work to approved invoice',
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-    return <LandingPage />;
+    return <HomePage />;
 }

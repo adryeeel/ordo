@@ -16,8 +16,8 @@
         "lib": "@ordo/ui/lib",
         "hooks": "@ordo/ui/hooks",
         "utils": "@ordo/ui/lib/utils",
-        "ui": "@ordo/ui/components/shadcn",
-        "components": "@ordo/ui/components"
+        "components": "@ordo/ui/components",
+        "ui": "@ordo/ui/components/primitive"
     },
     "menuColor": "default",
     "menuAccent": "subtle",
