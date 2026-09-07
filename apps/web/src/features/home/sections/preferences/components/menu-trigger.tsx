@@ -13,7 +13,7 @@ export function MenuTrigger() {
         <PopoverTrigger
             aria-hidden={hidden}
             aria-label='Open preferences menu'
-            className={`${hidden && 'invisible opacity-0'} fixed right-5 bottom-5 z-10 transition-all duration-150 2xl:visible 2xl:opacity-100`}
+            className={`${hidden && 'invisible opacity-0'} fixed right-3 bottom-3 z-10 transition-all duration-150 md:right-5 md:bottom-5 2xl:visible 2xl:opacity-100`}
             render={<Button variant='outline' size='icon-lg' />}
         >
             <SettingsIcon className='size-5 stroke-[1.5]' />
