@@ -1,8 +1,8 @@
 import { test } from 'vitest';
 import { render } from 'vitest-browser-react';
 
-import { Page, mockMatchMedia } from '@/features/home/sections/preferences/tests/utils';
-import type { Theme } from '@/features/home/sections/preferences/tests/utils';
+import { Page } from './page';
+import { type Theme, mockMatchMedia } from './mock-match-media';
 
 export const it = test
     .extend('system', 'dark' as Theme)
@@ -12,24 +12,28 @@ export const it = test
     })
     .extend('menu', async () => {
         const screen = await render(<Page />);
-        const trigger = screen.getByTestId('preferences-trigger');
+        const trigger = screen.getByRole('button', { name: 'open preferences menu' });
 
         return { ...screen, trigger };
     })
     .extend('language', async ({ menu }) => {
         await menu.trigger.click();
 
-        const en = menu.getByRole('tab', { name: /english/i });
-        const pt = menu.getByRole('tab', { name: /português/i });
+        const options = {
+            en: menu.getByRole('tab', { name: 'english' }),
+            pt: menu.getByRole('tab', { name: 'português' }),
+        };
 
-        return { options: { en, pt } };
+        return { options };
     })
     .extend('theme', async ({ menu }) => {
         await menu.trigger.click();
 
-        const dark = menu.getByRole('tab', { name: /dark/i });
-        const light = menu.getByRole('tab', { name: /light/i });
-        const system = menu.getByRole('tab', { name: /system/i });
+        const options = {
+            dark: menu.getByRole('tab', { name: 'dark' }),
+            light: menu.getByRole('tab', { name: 'light' }),
+            system: menu.getByRole('tab', { name: 'system' }),
+        };
 
-        return { options: { dark, light, system } };
+        return { options };
     });

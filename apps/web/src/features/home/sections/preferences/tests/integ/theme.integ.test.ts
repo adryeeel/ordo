@@ -1,7 +1,7 @@
 import { expect, describe } from 'vitest';
 import { userEvent } from 'vitest/browser';
 
-import { it } from '@/features/home/sections/preferences/tests/utils';
+import { it } from '../utils/it';
 
 describe('Theme options', () => {
     it('renders dark, light and system as choices', async ({ theme }) => {
