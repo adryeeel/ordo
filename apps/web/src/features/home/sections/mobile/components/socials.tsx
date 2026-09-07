@@ -1,44 +1,38 @@
-import { Button } from '@ordo/ui/primitive/button';
-import { DialogClose } from '@ordo/ui/primitive/dialog';
-
+import { AnchorButton } from '@ordo/ui/composed/anchor';
 import { ArrowUpRightIcon } from '@ordo/ui/icons/symbols';
 import { XIcon, InstagramIcon } from '@ordo/ui/icons/brands';
 
-export function Socials() {
+interface Props {
+    onClick?: () => void;
+}
+
+export function Socials({ onClick }: Props) {
     return (
         <div className='mt-auto grid grid-cols-[auto_auto_1fr] gap-2 border-t pt-5'>
-            <Button
+            <AnchorButton
+                external
                 size='icon-lg'
                 variant='outline'
-                nativeButton={false}
-                render={
-                    <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
-                        <InstagramIcon aria-label='Instagram' />
-                    </a>
-                }
-            />
-            <Button
+                aria-label='Instagram'
+                href='https://instagram.com'
+            >
+                <InstagramIcon aria-label='Instagram' />
+            </AnchorButton>
+
+            <AnchorButton
+                external
                 size='icon-lg'
+                aria-label='X'
                 variant='outline'
-                nativeButton={false}
-                render={
-                    <a href='https://x.com' target='_blank' rel='noopener noreferrer'>
-                        <XIcon aria-label='X' />
-                    </a>
-                }
-            />
-            <DialogClose className='ml-auto max-w-max'>
-                <Button
-                    size='lg'
-                    nativeButton={false}
-                    render={
-                        <a href='#waitlist' target='_self'>
-                            Join the waitlist
-                            <ArrowUpRightIcon />
-                        </a>
-                    }
-                />
-            </DialogClose>
+                href='https://x.com'
+            >
+                <XIcon aria-hidden='true' />
+            </AnchorButton>
+
+            <AnchorButton onClick={onClick} size='lg' href='#waitlist'>
+                Join the waitlist
+                <ArrowUpRightIcon aria-hidden='true' />
+            </AnchorButton>
         </div>
     );
 }
