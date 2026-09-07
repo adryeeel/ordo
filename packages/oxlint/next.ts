@@ -10,6 +10,7 @@ export const nextConfig: OxlintConfig = {
             {
                 additionalTestBlockFunctions: [
                     'it',
+                    'it.for',
                     'it.skip',
                     'it.only',
                     'it.todo',
