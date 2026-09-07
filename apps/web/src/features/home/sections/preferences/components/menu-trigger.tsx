@@ -1,19 +1,30 @@
 'use client';
 
+import { cn } from '@ordo/ui/lib/utils';
 import { Button } from '@ordo/ui/primitive/button';
 import { SettingsIcon } from '@ordo/ui/icons/symbols';
 import { PopoverTrigger } from '@ordo/ui/primitive/popover';
 
 import { usePreferences } from '../hooks';
 
-export function MenuTrigger() {
+interface Props {
+    className?: string;
+}
+
+export function MenuTrigger({ className }: Props) {
     const { hidden } = usePreferences();
+
+    const styles = cn(
+        hidden && 'invisible opacity-0',
+        'transition-all duration-150 2xl:visible 2xl:opacity-100',
+        className,
+    );
 
     return (
         <PopoverTrigger
+            className={styles}
             aria-hidden={hidden}
             aria-label='Open preferences menu'
-            className={`${hidden && 'invisible opacity-0'} fixed right-3 bottom-3 z-10 transition-all duration-150 md:right-5 md:bottom-5 2xl:visible 2xl:opacity-100`}
             render={<Button variant='outline' size='icon-lg' />}
         >
             <SettingsIcon className='size-5 stroke-[1.5]' />
