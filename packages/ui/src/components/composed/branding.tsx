@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -11,11 +13,11 @@ interface Props {
 export function OrdoLogo({ className, loading }: Props) {
     return (
         <Image
-            src='/img/ordo.svg'
-            alt='Minimalist round flower petals'
+            alt=''
             width={80}
             height={80}
             loading={loading}
+            src='/img/ordo.svg'
             className={cn('size-8 dark:invert', className)}
         />
     );
@@ -25,7 +27,7 @@ export function OrdoMark({ className, loading }: Props) {
     return (
         <Link
             href='/'
-            aria-label='Go to home'
+            onClick={() => window.scrollTo({ top: 0 })}
             className={cn('group flex items-center gap-2.5', className)}
         >
             <OrdoLogo loading={loading} />
