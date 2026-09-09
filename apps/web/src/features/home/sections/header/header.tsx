@@ -1,5 +1,5 @@
-import { Button } from '@ordo/ui/primitive/button';
 import { OrdoMark } from '@ordo/ui/composed/branding';
+import { AnchorButton } from '@ordo/ui/composed/anchor';
 
 import { MobileMenu } from '@/features/home/sections/mobile';
 
@@ -15,11 +15,9 @@ export function Header() {
 
                 <div className='ml-auto flex pr-1.5'>
                     <MobileMenu className='md:hidden' />
-                    <Button
-                        nativeButton={false}
-                        className='hidden md:inline-flex'
-                        render={<a href='#waitlist'>Join the waitlist</a>}
-                    />
+                    <AnchorButton href='#waitlist' className='hidden md:inline-flex'>
+                        Join the waitlist
+                    </AnchorButton>
                 </div>
             </div>
         </header>

@@ -1,35 +1,28 @@
 import { cn } from '@ordo/ui/lib/utils';
-import { Button } from '@ordo/ui/primitive/button';
+import { AnchorButton } from '@ordo/ui/composed/anchor';
 
 import { NAV_ITEMS } from '@/features/home/const/navigation';
 
-interface NavigationProps {
+interface Props {
     className?: string;
 }
 
-interface NavigationItemProps {
-    href: string;
-    label: string;
-}
-
-export function Navigation({ className }: NavigationProps) {
+export function Navigation({ className }: Props) {
     return (
         <nav
             aria-label='Primary navigation'
             className={cn('absolute left-1/2 -translate-x-1/2 items-center gap-1', className)}
         >
-            {NAV_ITEMS.map((item) => (
-                <NavigationItem key={item.href} {...item} />
+            {NAV_ITEMS.map(({ href, label }) => (
+                <AnchorButton
+                    key={href}
+                    href={href}
+                    variant='ghost'
+                    className='text-muted-foreground hover:text-foreground'
+                >
+                    {label}
+                </AnchorButton>
             ))}
         </nav>
     );
 }
-
-const NavigationItem = ({ href, label }: NavigationItemProps) => (
-    <Button
-        variant='ghost'
-        nativeButton={false}
-        className='text-muted-foreground hover:text-foreground'
-        render={<a href={href}>{label}</a>}
-    />
-);
