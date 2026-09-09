@@ -11,8 +11,8 @@ import { MenuTrigger, ThemeTabs, LanguageTabs } from './components';
 export function Preferences() {
     return (
         <Popover>
-            <MenuTrigger />
-            <PopoverContent className='mr-5'>
+            <MenuTrigger className='fixed right-3 bottom-3 z-10 md:right-5 md:bottom-5' />
+            <PopoverContent className='mr-3 md:mr-5'>
                 <PopoverHeader>
                     <PopoverTitle>Preferences</PopoverTitle>
                     <PopoverDescription>Change theme or language.</PopoverDescription>
