@@ -1,6 +1,7 @@
 {
     "extends": "@ordo/typescript/next",
     "compilerOptions": {
+        "types": ["node"],
         "paths": { "@ordo/ui/*": ["./src/*"] }
     },
     "include": ["**/*.ts", "**/*.tsx"],

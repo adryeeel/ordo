@@ -1,6 +1,6 @@
 'use client';
 
-import { m } from 'motion/react';
+import { m } from '@ordo/ui/provider/motion';
 
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
