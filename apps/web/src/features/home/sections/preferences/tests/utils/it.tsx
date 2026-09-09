@@ -1,8 +1,9 @@
 import { test } from 'vitest';
 import { render } from 'vitest-browser-react';
 
-import { Page, mockMatchMedia } from '@/features/home/sections/preferences/tests/utils';
-import type { Theme } from '@/features/home/sections/preferences/tests/utils';
+import { type Theme, mockMatchMedia } from '@/tests/mocks/match-media.mock';
+
+import { Page } from './page';
 
 export const it = test
     .extend('system', 'dark' as Theme)
