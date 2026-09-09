@@ -2,7 +2,7 @@
 
 import { m, AnimatePresence } from '@ordo/ui/provider/motion';
 
-import { OrdoLogo } from '@ordo/ui/composed/branding';
+import { OrdoLogo } from '@ordo/ui/composed/logo';
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
 import { StageContent } from '@/features/home/components/workflow/stage-content';
