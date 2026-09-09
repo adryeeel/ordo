@@ -2,6 +2,9 @@ import { defineConfig } from 'vitest/config';
 import { playwright } from '@vitest/browser-playwright';
 
 export default defineConfig({
+    optimizeDeps: {
+        exclude: ['next/link', 'next/image'],
+    },
     resolve: {
         alias: { '@': new URL('./src', import.meta.url).pathname },
     },
