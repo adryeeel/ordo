@@ -1,6 +1,6 @@
 import { CheckIcon } from '@ordo/ui/icons/symbols';
 
-import { TEAM_ASSIGNMENTS } from '@/features/home/constants/landing-content';
+import { TEAM_ASSIGNMENTS } from '@/features/home/const/landing-content';
 
 export function AssignStage() {
     return (

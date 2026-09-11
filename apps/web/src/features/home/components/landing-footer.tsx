@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Separator } from '@ordo/ui/primitive/separator';
 import { OrdoMark } from '@ordo/ui/composed/mark';
 
-import { LANDING_NAV_ITEMS } from '@/features/home/constants/landing-content';
+import { LANDING_NAV_ITEMS } from '@/features/home/const/landing-content';
 
 export function LandingFooter() {
     return (
