@@ -3,7 +3,6 @@
     "type": "module",
     "exports": {
         "./lib/*": "./src/lib/*.ts",
-        "./constants/*": "./src/constants/*.ts",
         "./styles.css": "./src/style/global.css",
         "./icons/*": "./src/components/icons/*.tsx",
         "./composed/*": "./src/components/composed/*.tsx",
