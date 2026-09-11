@@ -1,7 +1,5 @@
 {
     "name": "ordo",
-    "version": "1.0.0",
-    "license": "MIT",
     "author": "Adryel Rocha",
     "type": "module",
     "scripts": {
