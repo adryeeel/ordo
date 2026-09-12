@@ -3,9 +3,11 @@
     "type": "module",
     "scripts": {
         "dev": "next dev",
-        "test": "vitest run",
         "build": "next build",
         "start": "next start",
+        "test:watch": "vitest",
+        "test:check": "vitest run",
+        "test:related": "vitest related --run",
         "fmt:fix": "oxfmt",
         "fmt:check": "oxfmt --check",
         "lint:check": "oxlint",
