@@ -1,4 +1,4 @@
-import { DEFINE_FIELDS } from '@/features/home/constants/landing-content';
+import { DEFINE_FIELDS } from '@/features/home/const/landing-content';
 
 export function DefineStage() {
     return (

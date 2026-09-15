@@ -1,4 +1,4 @@
-import { PRINCIPLES } from '@/features/home/constants/landing-content';
+import { PRINCIPLES } from '@/features/home/const/landing-content';
 
 export function PrinciplesSection() {
     return (

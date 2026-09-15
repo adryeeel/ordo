@@ -5,5 +5,9 @@
         "./base": "./tsconfig.base.json",
         "./next": "./tsconfig.next.json",
         "./nest": "./tsconfig.nest.json"
+    },
+    "scripts": {
+        "fmt:fix": "oxfmt",
+        "fmt:check": "oxfmt --check"
     }
 }

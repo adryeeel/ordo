@@ -8,28 +8,25 @@
             "with": ["api#dev"]
         },
 
-        "lint:check": {
-            "inputs": ["$TURBO_DEFAULT$"],
-            "outputs": []
-        },
-
         "lint:fix": {
-            "inputs": ["$TURBO_DEFAULT$"],
+            "cache": false,
             "outputs": []
         },
 
         "fmt:fix": {
-            "inputs": ["$TURBO_DEFAULT$"],
+            "cache": false,
             "outputs": []
         },
 
         "fmt:check": {
-            "inputs": ["$TURBO_DEFAULT$"],
             "outputs": []
         },
 
-        "test": {
-            "inputs": ["$TURBO_DEFAULT$"],
+        "lint:check": {
+            "outputs": []
+        },
+
+        "test:check": {
             "outputs": []
         },
 

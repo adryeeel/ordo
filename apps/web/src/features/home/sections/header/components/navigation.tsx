@@ -1,7 +1,7 @@
 import { cn } from '@ordo/ui/lib/utils';
 import { AnchorButton } from '@ordo/ui/composed/anchor';
 
-import { NAV_LINKS } from '@/features/home/constants/navigation';
+import { NAV_LINKS } from '@/features/home/const/navigation';
 
 interface Props {
     className?: string;

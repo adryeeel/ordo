@@ -1,7 +1,5 @@
 {
     "name": "ordo",
-    "version": "1.0.0",
-    "license": "MIT",
     "author": "Adryel Rocha",
     "type": "module",
     "scripts": {
@@ -24,5 +22,5 @@
         "oxlint-tsgolint": "^7.0.2001",
         "turbo": "^2.10.12"
     },
-    "packageManager": "pnpm@11.25.0"
+    "packageManager": "pnpm@12.4.1"
 }

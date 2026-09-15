@@ -3,18 +3,20 @@
     "type": "module",
     "scripts": {
         "dev": "next dev",
-        "test": "vitest run",
         "build": "next build",
         "start": "next start",
+        "test:watch": "vitest",
+        "test:check": "vitest run",
+        "test:related": "vitest related --run",
         "fmt:fix": "oxfmt",
         "fmt:check": "oxfmt --check",
         "lint:check": "oxlint",
         "lint:fix": "oxlint --fix"
     },
     "dependencies": {
-        "next": "^16.3.3",
-        "react": "^19.2.8",
-        "react-dom": "^19.2.8"
+        "next": "catalog:",
+        "react": "catalog:",
+        "react-dom": "catalog:"
     },
     "devDependencies": {
         "@ordo/oxfmt": "workspace:*",
@@ -27,7 +29,7 @@
         "@vitest/browser-playwright": "^4.1.11",
         "babel-plugin-react-compiler": "^1.0.0",
         "playwright": "^1.62.1",
-        "typescript": "^7.0.2",
+        "typescript": "catalog:",
         "vitest": "^4.1.11",
         "vitest-browser-react": "^2.2.0"
     }

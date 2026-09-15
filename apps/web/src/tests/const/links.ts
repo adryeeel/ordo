@@ -1,4 +1,4 @@
-import { NAV_LINKS } from '@/features/home/constants/navigation';
+import { NAV_LINKS } from '@/features/home/const/navigation';
 
 export const LINKS = [
     ...NAV_LINKS.map(({ href, label }) => ({

@@ -1,4 +1,4 @@
-import type { OutcomeType } from '@/features/home/constants/landing-content';
+import type { OutcomeType } from '@/features/home/const/landing-content';
 
 export function OutcomeIcon({ type }: { type: OutcomeType }) {
     if (type === 'clarity') {

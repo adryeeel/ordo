@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from '@ordo/ui/icons/symbols';
 
-import { NAV_LINKS } from '@/features/home/constants/navigation';
+import { NAV_LINKS } from '@/features/home/const/navigation';
 
 interface Props {
     onClick?: () => void;
