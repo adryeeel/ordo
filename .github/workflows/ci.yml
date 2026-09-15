@@ -83,7 +83,7 @@ jobs:
               run: pnpm --filter web exec playwright install chromium --with-deps
 
             - name: Run tests
-              run: pnpm turbo test --affected
+              run: pnpm turbo test:check --affected
 
     build:
         needs: [lint, test]
