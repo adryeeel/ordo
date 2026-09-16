@@ -13,24 +13,24 @@ export const it = test
     })
     .extend('menu', async () => {
         const screen = await render(<Page />);
-        const trigger = screen.getByTestId('preferences-trigger');
+        const trigger = screen.getByRole('button', { name: 'Open preferences menu' });
 
         return { ...screen, trigger };
     })
     .extend('language', async ({ menu }) => {
         await menu.trigger.click();
 
-        const en = menu.getByRole('tab', { name: /english/i });
-        const pt = menu.getByRole('tab', { name: /português/i });
+        const en = menu.getByRole('tab', { name: 'English' });
+        const pt = menu.getByRole('tab', { name: 'Português' });
 
         return { options: { en, pt } };
     })
     .extend('theme', async ({ menu }) => {
         await menu.trigger.click();
 
-        const dark = menu.getByRole('tab', { name: /dark/i });
-        const light = menu.getByRole('tab', { name: /light/i });
-        const system = menu.getByRole('tab', { name: /system/i });
+        const dark = menu.getByRole('tab', { name: 'Dark' });
+        const light = menu.getByRole('tab', { name: 'Light' });
+        const system = menu.getByRole('tab', { name: 'System' });
 
         return { options: { dark, light, system } };
     });

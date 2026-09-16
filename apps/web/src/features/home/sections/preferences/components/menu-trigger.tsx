@@ -24,7 +24,6 @@ export function MenuTrigger({ className }: Props) {
         <PopoverTrigger
             className={styles}
             aria-hidden={hidden}
-            data-testid='preferences-trigger'
             aria-label='Open preferences menu'
             render={<Button variant='outline' size='icon-lg' />}
         >

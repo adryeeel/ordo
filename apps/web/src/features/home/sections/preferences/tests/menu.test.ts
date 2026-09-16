@@ -11,19 +11,19 @@ describe('Preferences menu', () => {
 
     it('opens on first click', async ({ menu }) => {
         await menu.trigger.click();
-        const dialog = menu.getByRole('dialog', { name: /preferences/i });
+        const dialog = menu.getByRole('dialog', { name: 'Preferences' });
         await expect.element(dialog).toBeVisible();
     });
 
     it('closes on second click', async ({ menu }) => {
         await menu.trigger.dblClick();
-        const dialog = menu.getByRole('dialog', { name: /preferences/i });
+        const dialog = menu.getByRole('dialog', { name: 'Preferences' });
         await expect.element(dialog).not.toBeInTheDocument();
     });
 
     it('hides near page bottom', async ({ menu }) => {
         document.body.className = 'h-[110vh] **:duration-0';
         window.scrollTo(0, document.body.scrollHeight - window.innerHeight - 5);
-        await expect.element(menu.trigger).not.toBeVisible();
+        await expect.element(menu.trigger).not.toBeInTheDocument();
     });
 });
