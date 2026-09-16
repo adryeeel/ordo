@@ -11,26 +11,26 @@ export const it = test
         localStorage.clear();
         mockMatchMedia(system);
     })
-    .extend('menu', async () => {
+    .extend('pref', async () => {
         const screen = await render(<Page />);
-        const trigger = screen.getByRole('button', { name: 'Open preferences menu' });
+        const toggle = screen.getByRole('button', { name: 'Open preferences menu' });
 
-        return { ...screen, trigger };
+        return { ...screen, toggle };
     })
-    .extend('language', async ({ menu }) => {
-        await menu.trigger.click();
+    .extend('lang', async ({ pref }) => {
+        await pref.toggle.click();
 
-        const en = menu.getByRole('tab', { name: 'English' });
-        const pt = menu.getByRole('tab', { name: 'Português' });
+        const en = pref.getByRole('tab', { name: 'English' });
+        const pt = pref.getByRole('tab', { name: 'Português' });
 
-        return { options: { en, pt } };
+        return { en, pt };
     })
-    .extend('theme', async ({ menu }) => {
-        await menu.trigger.click();
+    .extend('theme', async ({ pref }) => {
+        await pref.toggle.click();
 
-        const dark = menu.getByRole('tab', { name: 'Dark' });
-        const light = menu.getByRole('tab', { name: 'Light' });
-        const system = menu.getByRole('tab', { name: 'System' });
+        const dark = pref.getByRole('tab', { name: 'Dark' });
+        const light = pref.getByRole('tab', { name: 'Light' });
+        const system = pref.getByRole('tab', { name: 'System' });
 
-        return { options: { dark, light, system } };
+        return { dark, light, system };
     });
