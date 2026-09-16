@@ -9,7 +9,7 @@ describe('Header on narrow screens', async () => {
     beforeAll(() => page.viewport(390, 844));
 
     it(`renders 'Home' link`, async ({ header }) => {
-        const link = header.getByRole('link', { name: 'ordo.' });
+        const link = header.getByRole('link', { name: 'Ordo.' });
 
         await expect.element(link).toBeVisible();
         await expect.element(link).toHaveAttribute('href', '/');
@@ -21,7 +21,7 @@ describe('Header on narrow screens', async () => {
     });
 
     it(`renders hamburger menu`, async ({ header }) => {
-        const menu = header.getByRole('button', { name: 'open navigation menu' });
+        const menu = header.getByRole('button', { name: 'Open navigation menu' });
         await expect.element(menu).toBeInTheDocument();
     });
 });
@@ -30,7 +30,7 @@ describe('Header on wide screens', () => {
     beforeAll(() => page.viewport(1920, 1080));
 
     it(`renders 'Home' link`, async ({ header }) => {
-        const link = header.getByRole('link', { name: 'ordo.' });
+        const link = header.getByRole('link', { name: 'Ordo.' });
 
         await expect.element(link).toBeVisible();
         await expect.element(link).toHaveAttribute('href', '/');

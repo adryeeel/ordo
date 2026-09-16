@@ -8,11 +8,11 @@ export const it = test
         document.body.classList = '**:duration-0';
 
         const screen = await render(<Page />);
-        const trigger = screen.getByRole('button', { name: 'open navigation menu' });
+        const trigger = screen.getByRole('button', { name: 'Open navigation menu' });
 
         return { ...screen, trigger };
     })
     .extend('dialog', async ({ mobile }) => {
         await mobile.trigger.click();
-        return mobile.getByRole('dialog', { name: 'page sections' });
+        return mobile.getByRole('dialog', { name: 'Page Sections' });
     });
