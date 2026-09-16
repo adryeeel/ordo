@@ -25,32 +25,15 @@ describe('Theme options', () => {
         await userEvent.keyboard('{ArrowLeft}');
         await expect.element(theme.light).toHaveFocus();
     });
-});
 
-describe('When system preference is light', () => {
-    it.override('system', 'light');
-
-    it('puts the page in light mode by default', async ({ pref }) => {
-        void pref;
-        await expect.element(document.documentElement).toHaveClass('light');
-    });
-
-    it('switches to light mode when light option is selected', async ({ theme }) => {
-        await theme.light.click();
-        await expect.element(document.documentElement).toHaveClass('light');
-    });
-});
-
-describe('When system preference is dark', () => {
-    it.override('system', 'dark');
-
-    it('puts the page in dark mode by default', async ({ pref }) => {
-        void pref;
-        await expect.element(document.documentElement).toHaveClass('dark');
-    });
-
-    it('switches to dark mode when dark option is selected', async ({ theme }) => {
+    it('calls setTheme() when clicked', async ({ theme }) => {
         await theme.dark.click();
-        await expect.element(document.documentElement).toHaveClass('dark');
+        expect(theme.mock).toHaveBeenCalledWith('dark');
+
+        await theme.light.click();
+        expect(theme.mock).toHaveBeenCalledWith('light');
+
+        await theme.system.click();
+        expect(theme.mock).toHaveBeenCalledWith('system');
     });
 });

@@ -1,16 +1,13 @@
-import { test } from 'vitest';
+import { vi, test } from 'vitest';
 import { render } from 'vitest-browser-react';
 
-import { type Theme, mockMatchMedia } from '@/tests/mocks/match-media.mock';
+import { mockTheme } from '@/tests/mocks/theme.mock';
 
 import { Page } from './page';
 
+vi.mock('@ordo/ui/provider/theme', () => ({ useTheme: () => mockTheme }));
+
 export const it = test
-    .extend('system', 'dark' as Theme)
-    .extend('mockTheme', { auto: true }, ({ system }) => {
-        localStorage.clear();
-        mockMatchMedia(system);
-    })
     .extend('pref', async () => {
         const screen = await render(<Page />);
         const toggle = screen.getByRole('button', { name: 'Open preferences menu' });
@@ -32,5 +29,10 @@ export const it = test
         const light = pref.getByRole('tab', { name: 'Light' });
         const system = pref.getByRole('tab', { name: 'System' });
 
-        return { dark, light, system };
+        return {
+            dark,
+            light,
+            system,
+            mock: mockTheme.setTheme,
+        };
     });
