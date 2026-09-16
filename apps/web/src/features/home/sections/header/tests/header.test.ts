@@ -3,7 +3,7 @@ import { expect, describe, afterAll, beforeAll } from 'vitest';
 
 import { LINKS } from '@/tests/const/links';
 
-import { it } from './utils/it';
+import { it } from './utils/context';
 
 describe('Header on narrow screens', async () => {
     it(`renders 'Home' link`, async ({ header }) => {

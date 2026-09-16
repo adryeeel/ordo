@@ -1,6 +1,6 @@
 import { expect, describe } from 'vitest';
 
-import { it } from './utils/it';
+import { it } from './utils/context';
 
 describe('Mobile menu', () => {
     it('opens on first click', async ({ mobile }) => {

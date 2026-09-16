@@ -1,6 +1,6 @@
 import { vi } from 'vitest';
 
-export const mockTheme = {
+export const themeMock = {
     theme: 'system',
     setTheme: vi.fn<() => void>(),
 };

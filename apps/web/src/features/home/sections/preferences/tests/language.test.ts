@@ -1,7 +1,7 @@
 import { expect, describe } from 'vitest';
 import { userEvent } from 'vitest/browser';
 
-import { it } from './utils/it';
+import { it } from './utils/context';
 
 describe('Language options', () => {
     it('renders english and portuguese as choices', async ({ lang }) => {

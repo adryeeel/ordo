@@ -1,11 +1,11 @@
 import { vi, test } from 'vitest';
 import { render } from 'vitest-browser-react';
 
-import { mockTheme } from '@/tests/mocks/theme.mock';
+import { themeMock } from '@/tests/mocks';
 
 import { Page } from './page';
 
-vi.mock('@ordo/ui/provider/theme', () => ({ useTheme: () => mockTheme }));
+vi.mock('@ordo/ui/provider/theme', () => ({ useTheme: () => themeMock }));
 
 export const it = test
     .extend('pref', async () => {
@@ -33,6 +33,6 @@ export const it = test
             dark,
             light,
             system,
-            mock: mockTheme.setTheme,
+            mock: themeMock.setTheme,
         };
     });

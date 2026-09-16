@@ -1,3 +1,3 @@
 import { type ComponentProps, createElement } from 'react';
 
-export const Link = (props: ComponentProps<'a'>) => createElement('a', props);
+export const LinkMock = (props: ComponentProps<'a'>) => createElement('a', props);

@@ -2,7 +2,7 @@ import { expect, describe } from 'vitest';
 
 import { LINKS } from '@/tests/const/links';
 
-import { it } from './utils/it';
+import { it } from './utils/context';
 
 describe('Mobile navigation', () => {
     it.for(LINKS)('renders $name link', async ({ href, name }, { dialog }) => {

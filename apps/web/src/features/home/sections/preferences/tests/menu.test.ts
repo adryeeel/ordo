@@ -1,7 +1,7 @@
 import { userEvent } from 'vitest/browser';
 import { expect, describe, afterAll } from 'vitest';
 
-import { it } from './utils/it';
+import { it } from './utils/context';
 
 afterAll(() => {
     window.scrollTo({ top: 0 });
