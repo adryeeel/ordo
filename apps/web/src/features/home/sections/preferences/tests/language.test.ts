@@ -1,37 +1,31 @@
 import { expect, describe } from 'vitest';
 import { userEvent } from 'vitest/browser';
 
-import { it } from './utils/it';
+import { it } from './utils/context';
 
 describe('Language options', () => {
-    it('renders english and portuguese as choices', async ({ language }) => {
-        const { en, pt } = language.options;
-
-        await expect.element(en).toBeVisible();
-        await expect.element(pt).toBeVisible();
+    it('renders english and portuguese as choices', async ({ lang }) => {
+        await expect.element(lang.en).toBeVisible();
+        await expect.element(lang.pt).toBeVisible();
     });
 
-    it('pre-selects english and disable portuguese by default', async ({ language }) => {
-        const { en, pt } = language.options;
-
-        await expect.element(pt).toBeDisabled();
-        await expect.element(en).toHaveAttribute('aria-selected', 'true');
+    it('pre-selects english and disable portuguese by default', async ({ lang }) => {
+        await expect.element(lang.pt).toBeDisabled();
+        await expect.element(lang.en).toHaveAttribute('aria-selected', 'true');
     });
 
-    it('focus english when tab is pressed', async ({ language }) => {
+    it('focus english when tab is pressed', async ({ lang }) => {
         await userEvent.tab();
-        await expect.element(language.options.en).toHaveFocus();
+        await expect.element(lang.en).toHaveFocus();
     });
 
-    it('navigates with arrow keys', async ({ language }) => {
-        const { en, pt } = language.options;
-
+    it('navigates with arrow keys', async ({ lang }) => {
         await userEvent.tab();
 
         await userEvent.keyboard('{ArrowRight}');
-        await expect.element(pt).toHaveFocus();
+        await expect.element(lang.pt).toHaveFocus();
 
         await userEvent.keyboard('{ArrowLeft}');
-        await expect.element(en).toHaveFocus();
+        await expect.element(lang.en).toHaveFocus();
     });
 });

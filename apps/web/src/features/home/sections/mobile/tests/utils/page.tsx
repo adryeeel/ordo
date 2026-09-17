@@ -11,7 +11,7 @@ export function Page() {
             open={open}
             onNavigation={close}
             onOpenChange={setOpen}
-            className='fixed z-30'
+            className='fixed z-30 m-5'
         />
     );
 }

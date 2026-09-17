@@ -1,3 +1,3 @@
 import { type ComponentProps, createElement } from 'react';
 
-export const Image = (props: ComponentProps<'img'>) => createElement('img', props);
+export const ImageMock = (props: ComponentProps<'img'>) => createElement('img', props);
