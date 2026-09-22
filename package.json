@@ -17,10 +17,10 @@
         "@ordo/oxlint": "workspace:*",
         "husky": "^9.1.7",
         "lint-staged": "^17.4.1",
-        "oxfmt": "^0.67.0",
-        "oxlint": "^1.80.0",
-        "oxlint-tsgolint": "^7.0.2001",
-        "turbo": "^2.10.12"
+        "oxfmt": "^0.68.0",
+        "oxlint": "^1.83.0",
+        "oxlint-tsgolint": "^7.0.2002",
+        "turbo": "^2.11.2"
     },
     "packageManager": "pnpm@12.4.1"
 }
