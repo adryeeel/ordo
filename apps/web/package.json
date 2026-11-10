@@ -23,14 +23,14 @@
         "@ordo/oxlint": "workspace:*",
         "@ordo/typescript": "workspace:*",
         "@ordo/ui": "workspace:*",
-        "@tailwindcss/postcss": "^4.3.3",
+        "@tailwindcss/postcss": "^4.3.5",
         "@types/react": "^19.2.18",
         "@types/react-dom": "^19.2.5",
-        "@vitest/browser-playwright": "^5.0.0",
+        "@vitest/browser-playwright": "^5.1.0",
         "babel-plugin-react-compiler": "^1.0.0",
-        "playwright": "^1.62.1",
+        "playwright": "^1.65.0",
         "typescript": "catalog:",
-        "vitest": "^5.0.0",
+        "vitest": "^5.1.0",
         "vitest-browser-react": "^2.2.0"
     }
 }
